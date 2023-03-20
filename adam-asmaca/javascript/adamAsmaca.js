@@ -47,6 +47,7 @@ let newText;
 let contAnswer = true;
 let controlVar;
 let translatedId;
+var letter;
 
 loadLS();
 getWordLS();
@@ -59,8 +60,7 @@ showCount();
 // Event Listeners
 popupButton.addEventListener('click', popupBut);
 window.addEventListener('keyup', catchKey);
-window.addEventListener('touchstart', catchKeyMobil);
-//mobilInput.addEventListener('keyup', catchKey);
+mobilInput.addEventListener('input', tryFunc)
 window.addEventListener('click', closeArea);
 inputArea.addEventListener('click', inInput);
 nameInput.addEventListener('keyup',enterFunc)
@@ -488,12 +488,10 @@ function breakManLine() {
     thiefImg.style.zIndex = '10';
 }
 function inputFunc(){
-       mobilInput.focus();
+    mobilInput.focus();
 }
-function catchKeyMobil(event){
-     var touch = event.touches[0];
-     var selectedChar = touch.target.textContent;
-     mainFun();
+function catchKeyMobil(selectedChar){
+    mainFun();
 
     function mainFun() {
         const selectWordLetter = document.querySelectorAll('.letter');
@@ -536,4 +534,12 @@ function catchKeyMobil(event){
     youWon();
     return;
 }
-    
+
+function tryFunc(event) {
+    letter = event.target.value.slice(-1);
+
+    if (letter.length == 1){
+        catchKeyMobil(letter)
+    }
+    return letter;
+};
