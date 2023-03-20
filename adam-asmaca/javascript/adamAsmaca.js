@@ -25,7 +25,7 @@ const infoInput = document.querySelector('#manInfo');
 const addButton = document.querySelector('#addPerson');
 const delButton = document.querySelector('#delAllPerson');
 const addInf = document.querySelector('.added-text');
-const mobilInput = document.getElementById('mobile-input');
+const mobilInput = document.querySelector('#mobile-input');
 
 
 // Select Word
