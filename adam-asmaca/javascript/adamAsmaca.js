@@ -59,7 +59,8 @@ showCount();
 // Event Listeners
 popupButton.addEventListener('click', popupBut);
 window.addEventListener('keyup', catchKey);
-mobilInput.addEventListener('keyup', catchKey);
+window.addEventListener('touchstart', denemeFunc);
+//mobilInput.addEventListener('keyup', catchKey);
 window.addEventListener('click', closeArea);
 inputArea.addEventListener('click', inInput);
 nameInput.addEventListener('keyup',enterFunc)
@@ -486,7 +487,7 @@ function breakManLine() {
     thiefImg.className += 'procces-done';
     thiefImg.style.zIndex = '10';
 }
-function inputFunc(){
-    const newInput = document.querySelector('#mobile-input');
-    newInput.focus();
+function denemeFunc(event){
+    console.log(event);
+    console.log(event.keyCode);
 }
