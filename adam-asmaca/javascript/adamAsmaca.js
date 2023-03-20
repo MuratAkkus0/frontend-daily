@@ -537,6 +537,7 @@ function catchKeyMobil(selectedChar){
 
 function tryFunc(event) {
     letter = event.target.value.slice(-1);
+    letter = letter.toLowerCase();
 
     if (letter.length == 1){
         catchKeyMobil(letter)
