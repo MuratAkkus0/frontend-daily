@@ -575,3 +575,11 @@ text areaya harf sınırı koy
         top: 180px;
     }
 }
+@media screen and (max-height: 440px) {
+    .app-main{
+        max-height: 50%;
+    }
+    .image img {
+        top: 150px;
+    }
+}
