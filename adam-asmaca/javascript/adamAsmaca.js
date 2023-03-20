@@ -59,7 +59,7 @@ showCount();
 // Event Listeners
 popupButton.addEventListener('click', popupBut);
 window.addEventListener('keyup', catchKey);
-window.addEventListener('touchstart', denemeFunc);
+window.addEventListener('touchstart', catchKey);
 //mobilInput.addEventListener('keyup', catchKey);
 window.addEventListener('click', closeArea);
 inputArea.addEventListener('click', inInput);
