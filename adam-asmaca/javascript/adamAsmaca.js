@@ -25,6 +25,7 @@ const infoInput = document.querySelector('#manInfo');
 const addButton = document.querySelector('#addPerson');
 const delButton = document.querySelector('#delAllPerson');
 const addInf = document.querySelector('.added-text');
+const mobilInput = document.getElementById('mobile-input');
 
 
 // Select Word
@@ -58,6 +59,7 @@ showCount();
 // Event Listeners
 popupButton.addEventListener('click', popupBut);
 window.addEventListener('keyup', catchKey);
+mobilInput.addEventListener('keyup', catchKey);
 window.addEventListener('click', closeArea);
 inputArea.addEventListener('click', inInput);
 nameInput.addEventListener('keyup',enterFunc)
@@ -488,4 +490,3 @@ function inputFunc(){
     const newInput = document.querySelector('#mobile-input');
     newInput.focus();
 }
-// regex nedir araştır
