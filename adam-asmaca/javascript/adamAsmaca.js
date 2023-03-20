@@ -490,7 +490,7 @@ function breakManLine() {
 function inputFunc(){
        mobilInput.focus();
 }
-function catchKeyMobil(){
+function catchKeyMobil(event){
      var touch = event.touches[0];
      var selectedChar = touch.target.textContent;
      mainFun();
