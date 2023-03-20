@@ -59,7 +59,7 @@ showCount();
 // Event Listeners
 popupButton.addEventListener('click', popupBut);
 window.addEventListener('keyup', catchKey);
-window.addEventListener('touchstart', catchKey);
+window.addEventListener('touchstart', catchKeyMobil);
 //mobilInput.addEventListener('keyup', catchKey);
 window.addEventListener('click', closeArea);
 inputArea.addEventListener('click', inInput);
@@ -489,4 +489,52 @@ function breakManLine() {
 }
 function inputFunc(){
        mobilInput.focus();
+}
+function catchKeyMobil(){
+     var touch = event.touches[0];
+     var selectedChar = touch.target.textContent;
+     mainFun();
+
+    function mainFun() {
+        const selectWordLetter = document.querySelectorAll('.letter');
+        let selectedWordLetters = [];
+
+        if (pushedKey.includes(selectedChar)) {
+            letterAlreadyUsed();
+            return;
+        }
+
+
+        selectWordLetter.forEach((item) => {
+            selectedWordLetters.push(item.children[0].textContent);
+        })
+
+        selectWordLetter.forEach((item) => {
+            if (selectedChar == item.children[0].textContent) {
+                item.children[0].textContent = item.children[0].textContent.toUpperCase();
+                item.children[0].style.display = 'inline-block';
+                letterCount++;
+                if (!activedLetters.includes(item.children[0].textContent)) {
+                    activedLetters.push(item.children[0].textContent);
+                    tryCount++;
+                }
+            }
+        })
+
+        if (!selectedWordLetters.includes(selectedChar)) {
+            if (!wrongLetterArr.includes(selectedChar)) {
+                mainCount--;
+                wrongLetterArr.push(selectedChar);
+                wrongArea.innerHTML += ` <div class="wrong-letter">${selectedChar},</div> `
+            }
+        }
+    }
+
+    pushedKey.push(selectedChar);
+    showCount();
+    showMan();
+    youWon();
+    return;
+}
+    
 }
