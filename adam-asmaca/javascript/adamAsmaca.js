@@ -487,7 +487,6 @@ function breakManLine() {
     thiefImg.className += 'procces-done';
     thiefImg.style.zIndex = '10';
 }
-function denemeFunc(event){
-    console.log(event);
-    console.log(event.keyCode);
+function inputFunc(){
+       mobilInput.focus();
 }
