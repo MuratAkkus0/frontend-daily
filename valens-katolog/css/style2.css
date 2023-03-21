@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: "Times New Roman";
+}
+:root{
+    --header-height : 60px;
+    --font-22 : 22px;
+    --font-20 : 20px;
+    --font-18 : 18px;
+    --font-16 : 16px;
+    --font-14 : 14px;
+}
+html{
+
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    background: white;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    z-index: 6;
+    width: 100%;
+    position: fixed;
+
+}
+nav{
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.logo{
+}
+.logo .img{
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo .img a > img {
+    pointer-events: none;
+}
+.header-logo{
+    height: 50px;
+    opacity: .8;
+}
+ul.menu{
+    display: inline-flex;
+    height: var(--header-height);
+    align-items: center;
+}
+ul.menu > li{
+    height: 100%;
+}
+a.li-menu{
+    display: block;
+    padding: 0 10px;
+    height: 100%;
+    line-height: var(--header-height);
+    text-align: center;
+    font-size: var(--font-16);
+    color: white;
+}
+a.li-menu:hover{
+    background-color: rgb(255, 255, 255,0.1);
+    transform: scale(1.03);
+    transition: all .5s ease;
+}
+.content{
+    display: flex;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+.main:nth-child(odd){
+    background-color: black;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+.main-content{
+    height: 100vh;
+    width: 100vw;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.main .main-img{
+}
+.main-img img{
+    pointer-events: none;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px 2px rgba(245, 245, 245, 1);
+    width: 250px;
+    height: 250px;
+    opacity: .90;
+}
+.addverb-text-box{
+    height: 250px;
+    flex: 1;
+    flex-grow: .95;
+}
+.addverb-title{
+    border-bottom: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px 0px rgba(245, 245, 245, 0.7);
+    padding: 10px;
+    text-transform: full-size-kana;
+    text-align: center;
+    letter-spacing: 1.3px;
+}
+.addverb-title .add-title{
+    color: white;
+    font-size: var(--font-22);
+}
+.addverb-text-box .add-text-content{
+    padding: 20px 10px;
+}
+.add-text-content .add-text{
+    color: white;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 1.1px;
+    text-align: justify;
+
+}
+
+
+
+/* Kaydırma çubuğu stilleri */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+}
