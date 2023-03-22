@@ -234,7 +234,7 @@ a.li-menu:hover {
     width: 97%;
     border-radius: 10px;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.6);
-    background-image: url("../images/products_backgroun2.jpg");
+    background-image: url("../images/products_backgroung.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 70%;
@@ -294,12 +294,6 @@ a.li-menu:hover {
     flex: 1;
     position: relative;
     border-radius: 10px 0 0 10px;
-    /*
-    background-image: url("../images/candles.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position-y: 70%;
-     */
 }
 
 .product .product-img .image-content {
