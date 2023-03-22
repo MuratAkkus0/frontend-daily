@@ -48,7 +48,7 @@ body {
 }
 
 header {
-    z-index: 6;
+    z-index: 7;
     width: 100%;
     position: fixed;
 
@@ -145,6 +145,7 @@ a.li-menu:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .main {
@@ -154,9 +155,6 @@ a.li-menu:hover {
 }
 
 .main:first-child {
-    background-image: url(../images/main_background.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
 }
 
 .main-content {
@@ -165,6 +163,15 @@ a.li-menu:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.main-content .main-background{
+
+}
+.main-background img{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 }
 
 .main:first-child .main-content {
@@ -181,6 +188,7 @@ a.li-menu:hover {
 }
 
 .addverb-text-box {
+    z-index: 2;
     height: 250px;
     flex: 1;
     flex-grow: .95;
@@ -244,11 +252,11 @@ a.li-menu:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.65);
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     font-size: 48px;
     font-weight: 600;
     letter-spacing: 5px;
@@ -262,6 +270,8 @@ a.li-menu:hover {
     display: flex;
     border-radius: 10px;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.8);
+    background-color: white;
+    border: 1px solid black;
 }
 .product:hover{
     transform: scale(1.005);
@@ -294,6 +304,12 @@ a.li-menu:hover {
     flex: 1;
     position: relative;
     border-radius: 10px 0 0 10px;
+    /*
+    background-image: url("../images/candles.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position-y: 70%;
+     */
 }
 
 .product .product-img .image-content {
