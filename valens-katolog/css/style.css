@@ -192,7 +192,7 @@ a.li-menu:hover {
     flex-grow: .95;
     border-radius: 5px;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .addverb-title {
@@ -212,6 +212,7 @@ a.li-menu:hover {
 
 .addverb-text-box .add-text-content {
     padding: 20px 10px;
+
 }
 
 .add-text-content .add-text {
@@ -220,6 +221,7 @@ a.li-menu:hover {
     font-style: italic;
     letter-spacing: 1.1px;
     text-align: justify;
+    line-height: 1.5;
 
 }
 .product-title {
