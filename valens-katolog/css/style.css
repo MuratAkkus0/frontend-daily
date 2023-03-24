@@ -145,6 +145,7 @@ a.li-menu:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .main {
@@ -168,7 +169,7 @@ a.li-menu:hover {
 }
 .main-background img{
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     object-fit: cover;
 }
@@ -226,7 +227,7 @@ a.li-menu:hover {
 
 .main .product-content {
     height: 200vh;
-    width: 100vw;
+    width: 100%;
     padding: 0px;
     display: flex;
     justify-content: center;
@@ -265,7 +266,7 @@ a.li-menu:hover {
     margin: 10px 0;
     position: relative;
     width: 97%;
-    height: clamp(300px,60%,350px);
+    height: clamp(300px,60%,400px);
     display: flex;
     border-radius: 10px;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.8);
