@@ -153,9 +153,6 @@ a.li-menu:hover {
     width: 100%;
 }
 
-.main:first-child {
-}
-
 .main-content {
     height: 100vh;
     padding: 0 80px;
@@ -163,8 +160,7 @@ a.li-menu:hover {
     justify-content: space-between;
     align-items: center;
 }
-.main-content .main-background{
-}
+
 .main-background img{
     position: absolute;
     width: 100%;
@@ -215,7 +211,7 @@ a.li-menu:hover {
 
 }
 
-.add-text-content .add-text {
+.add-text {
     color: white;
     font-weight: 600;
     font-style: italic;
@@ -224,9 +220,21 @@ a.li-menu:hover {
     line-height: 1.5;
 
 }
+/* Product Container Style Code Area */
+
+.main .product-content {
+    margin-top: 30px;
+    height: 100vh;
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+    transition: all .3s ease;
+}
+
 .product-title {
-    margin-top: 60px;
-    justify-self: flex-start;
     height: 200px;
     width: 100%;
     border-radius: 0px;
@@ -251,95 +259,201 @@ a.li-menu:hover {
     letter-spacing: 5px;
 }
 
-
-.main .product-content {
-    margin-top: 20px;
-    height: 200vh;
-    width: 100%;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    transition: all .3s ease;
-}
-
-.product {
-    margin: 10px 0;
-    position: relative;
-    width: 90%;
-    height: clamp(300px,60%,400px);
-    display: flex;
-    border-radius: 10px;
-    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.8);
-    background-color: white;
-    border: 1px solid black;
-}
-.product:hover{
-    transform: scale(1.005);
-    transition: all .3s ease;
-    cursor: pointer;
-}
-.product:nth-child(even) .product-img{
-    width: 50%;
-    height: 100%;
-    border-radius: 0 10px 10px 0;
-    position: absolute;
-    left: 50%;
-}
-.product:nth-child(even) .product-img .shadow{
-    border-radius: 0 10px 10px 0;
-
-}
-.product:nth-child(even) .candles-text{
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    right: 50%;
-}
-
-.candles-container {
-    overflow: hidden;
-}
-
-.candles-container .product-img {
+.product-content .slider-container{
     flex: 1;
-    position: relative;
-    border-radius: 10px 0 0 10px;
-    /*
-    background-image: url("../images/candles.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position-y: 70%;
-     */
-}
-
-.product .product-img .image-content {
-    width: 50%;
-    object-fit: cover;
-}
-
-.candles-container .product-img img {
-    position: absolute;
     width: 100%;
-}
-.candles-container .candles-text {
-    flex: 1;
-}
-.product .product-text{
-    z-index: 6;
-    width: 100%;
-    height: 100%;
-    opacity: .6;
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    color: white;
+    border: 1px solid lime;
+}
+.product-content .category-slider{
+    width: 95%;
+    height: 80%;
+    overflow: hidden;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+}
+.category-slider .category{
+    width: 40%;
+    min-width: 40%;
+    height: 90%;
+    margin: 0px 10px;
+    border: 1px solid red;
+}
+
+.about-us-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    padding: 0px;
+}
+
+.about-us-content .aboutus-img {
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+
+    border: 1px solid red;
+}
+.about-us-content .aboutus-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-us-content .aboutus-text-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.about-main-content{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 80px;
+}
+.about-us-content .about-title{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.65);
     font-size: 48px;
     font-weight: 600;
+    letter-spacing: 5px;
+}
+.about-title > p {
+    text-shadow: 0px 8px 10px black;
+}
+.about-us-content .introduce-area{
+    flex: 3;
+    height: max-content;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+.about-us-content .map-area{
+    flex: 2;
+    height: 100%;
+    margin-right: 10px;
+    border: 1px solid red;
+}
+
+.contact-content{
+    height: 300px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.contact-main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-main .logo-area{
+    flex: 3;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+.contact-main .logo-area img {
+    width: 150px;
+    height: 150px;
+}
+.contact-main .mail-area{
+    flex: 3;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+.contact-main .social-area{
+    flex: 4;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+}
+.social-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.social-title{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.social-area .social-box a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    margin: 15px;
+    text-align: left;
+    width: 200px;
+}
+.social-box .social-icon{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+}
+
+
+
+
+
+
+
+footer{
+    z-index: 5;
+    height: 25px;
+    min-height:25px ;
+    line-height: 25px;
+    width: 100%;
+    position: relative;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
 
 }
+footer > p {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+
+
+
+
+
 
 /* Kaydırma çubuğu stilleri */
 ::-webkit-scrollbar {
