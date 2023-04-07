@@ -27,6 +27,9 @@ ul {
 a {
     text-decoration: none;
 }
+img {
+    user-select: none;
+}
 
 body {
     height: 100vh;
