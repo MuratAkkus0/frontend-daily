@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sans-Serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url("halil-cibran-kusursuz-dc3bcnya.jpg");
+    background-size: 100% 100%;
+}
+.container .navbar{
+    height: 80px;
+    width: 100%;
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.65);
+}
+.container .navbar .logo{
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.container .navbar .logo .logotext{
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+.container .navbar ul{
+    position: absolute;
+    right:5px;
+    top:50%;
+    transform: translateY(-50%);
+    list-style-type: none;
+}
+ul{
+    max-height: 80px;
+    height: 100%;
+
+}
+ ul > li{
+     display: inline-block;
+     height: 100%;
+
+}
+ ul > li > a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+     height: 100%;
+     line-height: 80px;
+     padding: 0 10px;
+     transition: all .5s ease;
+}
+ ul > li > a:hover{
+     background-color: #fbfdfc;
+     color: rgba(0, 0, 0, 0.75);
+     transform: scale(1.1);
+     transition: transform .3s ease;
+ }
+ .container .main{
+     position: absolute;
+     background-color: rgba(135, 206, 250, 0.5);
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     padding: 20px 30px;
+ }
+ .container .main .maintext {
+     font-size: 24px;
+     text-align: center;
+     user-select: none;
+ }
+.container .main .maintext h1{
+    color: white;
+
+}
+.container .main .maintext h2{
+    color: #ea0b0b;
+
+}
+.container .main .buttons {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    display: grid;
+    justify-content: center;
+
+}
+.container .main .buttons #b1{
+    grid-row: 1;
+    grid-column: 1;
+    margin-right: 10px;
+}
+.container .main .buttons #b2{
+    grid-row: 1;
+    grid-column: 2;
+}
+.container .main .buttons button{
+    outline: none;
+    border: 2px solid #ff6377;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #ff6377;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.container .main .buttons button:hover{
+    border: 2px solid #ff6377;
+    background-color: whitesmoke;
+    color: #ff6377;
+    transform: scale(1.05);
+    transition: transform .3s ease;
+}
