@@ -3,6 +3,7 @@ const sudokuContainer = document.querySelector('.sudoku-container');
 const popupContainer = document.querySelector(".popup-container");
 // Variables
 let sudokuBoxList;
+let isGameOver = 80;
 let sudokuDefault = {
     0: [4, 5, "", "", "", "", "", "", ""],
     1: ["", "", 2, "", 7, "", 6, 3, ""],
@@ -15,7 +16,6 @@ let sudokuDefault = {
     8: ["", "", 8, "", "", 9, "", "", ""],
 
 }
-
 let sudokuKeys = {
     0: [4, 5, 3, 8, 2, 6, 1, 9, 7],
     1: [8, 9, 2, 5, 7, 1, 6, 3, 4],
@@ -27,7 +27,6 @@ let sudokuKeys = {
     7: [6, 7, 1, 3, 4, 5, 9, 8, 2],
     8: [2, 4, 8, 7, 6, 9, 3, 1, 5],
 }
-
 //Set Sudoku Box in Sudoku Area
 setBox()
 function setBox() {
@@ -55,26 +54,41 @@ function setDefaultNumbers() {
 }
 // Number Check Function
 function numberCheck(e) {
-    let text = e.target.value;
     console.log(e.keyCode)
-    if (e.keyCode >= 49 && e.keyCode <= 57) {
+    let text = e.target.value;
+    if (e.keyCode <= 57 && e.keyCode >= 49 || e.keyCode >= 96 && e.keyCode <= 105) {
         if (text == sudokuKeys[e.target.dataset.row][e.target.dataset.column]) {
             e.target.disabled = true;
             e.target.style.backgroundColor = "";
-            isEndOfGame();
-        }
-        else {
-            e.target.style.backgroundColor = "rgb(227, 88, 88)";
-            e.target.style.outline = "0"
-            if (e.target.value.length > 1) {
-                showPopup("Please give a number between 1-9")
-                e.target.value = "";
+            isGameOver += 1;
+            if (isGameOver === 81) {
+                endOfGame();
             }
+        } else {
+            e.target.style.backgroundColor = "rgb(230, 94, 94)";
+            e.target.style.outline = "0"
+            showPopup("Wrong Number Try again !")
+        }
+        if (e.target.value.length > 1) {
+            showPopup("Please give a number between 1-9")
+            e.target.value = "";
         }
     }
-    else if (e.keyCode <= 90 && e.keyCode >= 65) {
-        showPopup("Please give a number between 1-9")
-        e.target.value = "";
+    else if ((e.keyCode >= 186 && e.keyCode <= 222) || (e.keyCode >= 106 && e.keyCode <= 111)) {
+        e.target.style.backgroundColor = "rgb(230, 94, 94)";
+        e.target.style.outline = "0"
+        if (e.target.value.length >= 1) {
+            showPopup("Please give a number between 1-9")
+            e.target.value = "";
+        }
+    }
+    else if (e.keyCode >= 65 && e.keyCode <= 90) {
+        e.target.style.backgroundColor = "rgb(230, 94, 94)";
+        e.target.style.outline = "0"
+        if (e.target.value.length >= 1) {
+            showPopup("Please give a number between 1-9")
+            e.target.value = "";
+        }
     }
 }
 // show Message
@@ -82,36 +96,30 @@ function showPopup(msg) {
     let popupText = popupContainer.children[0].children[0];
     let okBtn = popupText.nextElementSibling;
     popupContainer.style.display = "flex";
-
-    popupText.innerText = msg;
-    if (okBtn.innerText == "Ok") {
-        okBtn.onclick = () => {
-            popupContainer.style.display = "none"
-
+    window.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            okBtnEventListener(e);
         }
-    } else {
-        okBtn.onclick = () => {
+    })
+    popupText.innerText = msg;
+    okBtn.addEventListener('click', okBtnEventListener);
+    function okBtnEventListener(e) {
+        if (okBtn.innerText == "Ok") {
+            popupContainer.style.display = "none"
+        } else if (okBtn.innerText == "New Game") {
             popupContainer.style.display = "none"
             location.reload();
         }
     }
 
+
 }
 // End Of Game Function
-function isEndOfGame() {
-    let isGameOver = 0;
-    let sudokuBoxes = document.querySelectorAll('.sudoku-box');
-    console.log(sudokuBoxes)
-    sudokuBoxes.forEach((box) => {
-        if (box.value.length = 1) {
-            isGameOver += 1;
-        }
-        if (isGameOver == 81) {
-            showPopup("congratulations you won the game !")
-            document.querySelector(".ok-btn").innerText = "New Game";
-        }
-    })
-
+function endOfGame() {
+    let okBtn = document.querySelector('.ok-btn')
+    okBtn.addEventListener('click', () => {
+        window.location.reload();
+    });
+    showPopup("congratulations you won the game !")
+    document.querySelector(".ok-btn").innerText = "New Game";
 }
-
-
