@@ -3,7 +3,7 @@ const sudokuContainer = document.querySelector('.sudoku-container');
 const popupContainer = document.querySelector(".popup-container");
 // Variables
 let sudokuBoxList;
-let isGameOver = 80;
+let isGameOver = 0;
 let sudokuDefault = {
     0: [4, 5, "", "", "", "", "", "", ""],
     1: ["", "", 2, "", 7, "", 6, 3, ""],
