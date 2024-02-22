@@ -51,16 +51,40 @@ function setDefaultNumbers() {
         }
     })
     sudokuBoxList = sudokuBoxes;
+    countDefaultKeys();
+
 }
+// Default key counter
+
+function countDefaultKeys() {
+    for (let i = 0; i < Object.keys(sudokuDefault).length; i++) {
+        sudokuDefault[i].forEach((item,index)=>{
+            if (typeof item === "number") {
+                isGameOver += 1;
+                disableDefaultInputs(i,index);
+            }
+        })
+        
+    }
+}
+// Disable default numbers inputs
+function disableDefaultInputs(i,index){
+    sudokuBoxList.forEach((box)=>{
+        if (box.dataset.row == i && box.dataset.column == index) {
+            box.disabled = true;
+        }
+    })
+}
+
 // Number Check Function
 function numberCheck(e) {
-    console.log(e.keyCode)
     let text = e.target.value;
     if (e.keyCode <= 57 && e.keyCode >= 49 || e.keyCode >= 96 && e.keyCode <= 105) {
         if (text == sudokuKeys[e.target.dataset.row][e.target.dataset.column]) {
             e.target.disabled = true;
             e.target.style.backgroundColor = "";
             isGameOver += 1;
+            console.log(isGameOver)
             if (isGameOver === 81) {
                 endOfGame();
             }
@@ -68,6 +92,7 @@ function numberCheck(e) {
             e.target.style.backgroundColor = "rgb(230, 94, 94)";
             e.target.style.outline = "0"
             showPopup("Wrong Number Try again !")
+            e.target.value = "";
         }
         if (e.target.value.length > 1) {
             showPopup("Please give a number between 1-9")
