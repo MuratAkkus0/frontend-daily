@@ -1,0 +1,60 @@
+.section1 {
+    font-family: "Noto Sans", sans-serif;
+}
+
+.section1>.container {
+    width: 1300px;
+    padding: 120px 0;
+    margin: 0 auto;
+    display: flex;
+}
+
+.section1>.container .icon-box {
+    flex: 3;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 187px 187px;
+
+}
+
+.section1>.container .icon-box .box {
+    cursor: pointer;
+    width: 184px;
+    height: 184px;
+    background-color: #fff;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 8px 2px rgba(167, 167, 167, 0.227);
+    transition: .2s all;
+}
+
+.section1>.container .icon-box .box:hover {
+    transform: scale(1.05);
+}
+
+.section1>.container .icon-box .box img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.section1>.container .content-text {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section1>.container .content-text h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.section1>.container .content-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 28px;
+}
