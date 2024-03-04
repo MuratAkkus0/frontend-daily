@@ -1,0 +1,97 @@
+footer {
+    font-family: "Noto Sans", sans-serif;
+    background-color: #141618;
+    color: #fff;
+}
+
+footer>.container {
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    padding: 80px 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer>.container .footer-header {
+    width: 100%;
+    margin-bottom: 30px;
+}
+footer>.container .footer-header  img{
+    cursor: pointer;
+}
+
+footer>.container .footer-section {
+    width: 100%;
+    display: flex;
+}
+
+footer>.container .footer-section .footer-content {
+    flex: 1;
+    display: flex;
+}
+
+footer>.container .footer-section .footer-content nav {
+    margin-right: 32px;
+    line-height: 30px;
+}
+
+footer>.container .footer-section .footer-content nav li a {
+    color: rgba(255, 255, 255, .6);
+    transition: .2s all;
+}
+
+footer>.container .footer-section .footer-content nav li a:hover {
+    color: #fff;
+}
+
+
+footer>.container .footer-section .search {
+    margin-left: auto;
+}
+
+footer>.container .footer-section .search h5 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+footer>.container .footer-section .search-box {
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+footer>.container .footer-section .search input {
+    color: #fff;
+    width: 400px;
+    background-color: #21252d;
+    padding: 0 5px;
+    height: 48px;
+}
+
+footer>.container .search .search-box button {
+    width: 46px;
+    height: 48px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #316aff;
+    font-size: 16px;
+
+}
+
+footer>.container .footer-end {
+    width: 100%;
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.083);
+    font-size: 14px;
+    color: rgba(255, 255, 255, .6);
+    border-radius: 1px;
+}
+footer>.container .footer-end a{
+    transition: all .2s;
+    margin-right: 30px;
+}
+footer>.container .footer-end a:hover{
+    color: #fff;
+}
