@@ -76,9 +76,6 @@ main {
     font-size: 18px;
     display: block;
 }
-#search::after{
-    content: '';
-}
 .error{
     width: calc(100% - 160px);
     bottom: 0;
