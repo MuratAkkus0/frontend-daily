@@ -22,7 +22,7 @@ function getCity(){
     try {
         if (input.value) {
             let city = input.value;
-            weatherApi = `http://api.weatherapi.com/v1/current.json?key=9d2520e1621245b192b130240240703&q=${city}&aqi=yes`
+            weatherApi = `http://api.weatherapi.com/v1/current.json?key=8831b26f8fbc4111875171653240703&q=${city}&aqi=yes`
             getApiData();
         }else{
             throw Error('Lütfen Bir Sehir Adi Girin!')
