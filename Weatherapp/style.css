@@ -173,15 +173,46 @@ div.result-area div.details {
         height: 95%;
     }
 }
-@media screen and (min-width: 767px) and (max-width: 991px){
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
     .app-container {
         width: 85%;
         height: 95%;
     }
 }
-@media screen and (min-width: 991px) and (max-width: 1199px){
+
+
+@media screen and (min-width: 991px) and (max-width: 1199px) {
     .app-container {
         width: 45%;
         height: 95%;
+    }
+}
+
+@media screen and (min-width: 991px) and (max-height: 599px) {
+
+    .app-container {
+        width: 35%;
+        height: 95%;
+    }
+
+    .app-container .search-area #search,
+    .app-container .search-area .btn {
+        height: 30px;
+        font-size: 18px;
+    }
+
+    .result-area .wetter-temp * {
+        font-size: 30px;
+
+    }
+
+    .result-area .wetter-status {
+        font-size: 18px;
+
+    }
+
+    .result-area .details>div * {
+        font-size: 16px;
     }
 }
