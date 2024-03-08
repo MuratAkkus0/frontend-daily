@@ -167,3 +167,21 @@ div.result-area div.details {
     justify-content: center;
     align-items: center;
 }
+@media screen and (max-width: 767px) {
+    .app-container {
+        width: 95%;
+        height: 95%;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 991px){
+    .app-container {
+        width: 85%;
+        height: 95%;
+    }
+}
+@media screen and (min-width: 991px) and (max-width: 1199px){
+    .app-container {
+        width: 45%;
+        height: 95%;
+    }
+}
