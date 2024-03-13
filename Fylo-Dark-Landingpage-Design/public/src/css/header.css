@@ -1,0 +1,34 @@
+header {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    background-color: hsl(219, 30%, 18%);
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-container img{
+    width: 70%;
+}
+
+header menu ul {
+    display: flex;
+    column-gap: 50px;
+}
+
+header ul.header-menu>li>a {
+    color: hsl(0, 0%, 85%);
+
+}
+
+header ul.header-menu>li>a:hover {
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    text-decoration: underline;
+}
