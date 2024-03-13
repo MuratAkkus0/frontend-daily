@@ -1,0 +1,50 @@
+@media screen and (max-width: 767px) {
+    main>footer .container .footer-header img {
+        width: 150px;
+    }
+
+    /* Footer Main */
+    main>footer .container .footer-main {
+        width: 100%;
+    }
+
+    main>footer .container .footer-main {
+        flex-direction: column;
+    }
+
+    main>footer .container .footer-main div.footer-part p {
+        column-gap: 15px;
+        line-height: 20px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    main>footer .container i:first-child {
+        align-items: top;
+    }
+
+    main>footer .container i {
+        font-size: 14px;
+        margin-right: 5px;
+
+    }
+
+    main>footer .container li {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    main>footer .container .footer-main div.footer-part.part-two {
+        margin-bottom: 30px;
+    }
+
+    main>footer .container .footer-main div.footer-part.part-five .icons {
+        column-gap: 5px;
+    }
+
+    main>footer .container .footer-main div.footer-part.part-five i {
+        width: 30px;
+        height: 30px;
+    }
+
+}
