@@ -61,7 +61,6 @@ function speakOut(msg) {
     const speechUtterance = new SpeechSynthesisUtterance();
     speechUtterance.text = msg;
     speechUtterance.volume = 1;
-    speechUtterance.voice = voices[3];
     speechUtterance.lang = 'tr-TR'
     speechUtterance.pitch = 0;
     speechUtterance.rate = 1.3;
