@@ -1,6 +1,7 @@
 let startBtn = document.querySelector('#startBtn');
 let stopBtn = document.querySelector('#stopBtn');
 let speakBtn = document.querySelector('#speakBtn');
+let textArea = document.querySelector('.text-area');
 
 const worts = [
     'Carvis',
@@ -27,6 +28,7 @@ recognition.onstart = function () {
 }
 recognition.onresult = function (event) {
     let lastSpeech = event.results[event.resultIndex][0].transcript;
+    textArea.innerHTML += `<p>+ ${lastSpeech}</p>`;
     console.log(lastSpeech);
     speakOut(lastSpeech);
 
@@ -63,6 +65,7 @@ function speakOut(msg) {
     speechUtterance.lang = 'tr-TR'
     speechUtterance.pitch = 0;
     speechUtterance.rate = 1.3;
+    textArea.innerHTML += `<p>- ${speechUtterance.text} (seslendirildi) </p>`;
     synth.speak(speechUtterance)
     return;
 }
