@@ -21,6 +21,7 @@ footer{
 }
 .grid-item .address{
     display: flex;
+    flex-shrink: 0;
     gap: 20px;
     line-height: 30px;
 }

@@ -46,7 +46,7 @@
     }
 
     .grid-container .grid-item>.address {
-        gap: 10px;
+        gap: 20px;
         line-height: 25px;
     }
 }
