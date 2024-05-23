@@ -1,0 +1,25 @@
+.overview .overview-box {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.overview .overview-box:hover {
+    box-shadow: 0px 0px 8px 0px rgba(232, 232, 232, 0.484);
+}
+
+.overview .count-circle {
+    width: 60px;
+    height: 60px;
+    border: 5px solid rgb(247, 125, 125);
+    border-radius: 50%;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.count-circle .count {
+    font-weight: 600;
+}

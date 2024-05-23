@@ -1,0 +1,43 @@
+.ctg-grid-cont4x {
+    width: 100%;
+    flex: 17;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: auto;
+}
+
+.item-cont4x {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, 200px);
+    gap: 10px;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.ctg-item {
+    color: rgba(0, 0, 0, 0.648);
+    padding: 0 25px;
+    background-color: #ffffff;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: .2s all;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.ctg-item>*{
+    width: 100%;
+}
+
+.ctg-item:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 8px 0px rgba(232, 232, 232, 0.4);
+}
+
