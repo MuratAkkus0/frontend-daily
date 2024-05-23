@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 #startBtn,#stopBtn{
     cursor: pointer;
     font-size: 16px;
     padding: 10px 15px;
     margin: 2px;
 }
+=======
+#startBtn,#stopBtn{
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+>>>>>>> 0c1b01780c88e06dc1470d9d0041434e8a5c31d5
