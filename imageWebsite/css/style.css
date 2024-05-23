@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+}
+html{
+    scroll-behavior: smooth;
+}
+a:visited,a:link{
+    color: inherit;
+    text-decoration: none;
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    scroll-behavior: smooth;
+
+}
+
+.header {
+    text-align: center;
+    padding: 80px 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.search-area {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.search-area .search {
+    width: 50%;
+    height: 40px;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+    border-right: none;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.search-area .btn {
+    cursor: pointer;
+    height: 40px;
+    padding: 0 30px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    transition: all .2s;
+}
+
+.btn:hover {
+    background-color: #f8f8f8;
+    letter-spacing: 1px;
+}
+
+.btn:active {
+    transform: scale(.98);
+}
+
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+}
+
+
+.image-container .card-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    justify-content: center;
+}
+
+
+.image-container .card {
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 15px;
+    margin-top: 15px;
+    padding: 5px;
+    box-shadow: 0 0 8px 2px #d7d7d7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s all;
+
+}
+
+.image-container .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 3px 8px 2px #d7d7d7;
+}
+
+.card .content img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card>.footer {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.card>.footer p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+}
+
+.container .add-more {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#addMore {
+    display: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(85, 193, 85);
+    transition: .2s all;
+}
+
+.msg{
+    width: 60%;
+    height: 30px;
+    color: white;
+    padding:0 4px;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 1px;
+    background-color: rgb(243, 32, 32);
+    border-radius: 3px;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: .5s all;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.enable_msg{
+    transform: translateY(0);
+}
+
+#addMore:hover {
+    transform: scale(1.02);
+}
+
+#addMore:active {
+    transform: scale(.98);
+}
+
+.container .go-top{
+    cursor: pointer;
+    position: fixed;
+    right: 50px;
+    bottom: 10px;
+}
+.go-top a{
+    display:block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    background-color: rgb(253, 34, 34);
+    border-radius: 50%;
+    transition: .2s all;
+}
+.go-top a:hover{
+    transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 767px) {
+    .image-container div.card-container {
+        grid-template-columns: repeat(1, 300px);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+    .image-container div.card-container {
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+
+@media (max-width:1350px) {
+    .image-container .card-container {
+        grid-template-columns: repeat(3, 300px);
+    }
+}

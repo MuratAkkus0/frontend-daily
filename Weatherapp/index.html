@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Weather App</title>
+</head>
+<body>
+    
+    <main>
+        <div class="app-container">
+            <div class="app-title"> <p id="city-name">Weather App</p> </div>
+            <div class="search-area">
+                <input type="text" id="search" autocomplete="off">
+                <button class="btn">Search</button>
+                <div class="error">
+                    
+                </div>
+            </div>
+            <div class="result-area">
+                <div class="wet-icon">
+                    <img src="img/wi-day-cloudy-gusts.svg" alt="">
+                </div>
+                <div class="wetter-temp">
+                    <span id="deg">10</span>&deg;
+                </div>
+                <div class="wetter-status">
+                    Windy
+                </div>
+                <div class="details">
+                    <div class="feel-temp">
+                        <p>Feel Like: <span id="feel-deg">3</span>&deg;C</p>
+                        <img src="img/wi-day-cloudy-gusts.svg" alt="" width="50px">
+                    </div>
+                    <div class="humidity">
+                        <p>Humidity: <span id="humidity">3</span>%</p>
+                        <img src="img/wi-day-cloudy-gusts.svg" alt="" width="50px">
+                    </div>
+                    <div class="wind-speed">
+                        <p>Wind Speed: <span id="wind-speed">3</span>m/s</p>
+                        <img src="img/wi-day-cloudy-gusts.svg" alt="" width="50px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+@media screen and (max-width:767px) {
+    
+    main > .home-page {
+        background: linear-gradient(0deg ,hsl(218, 28%, 13%) 50% , hsl(219, 30%, 18%) 50%); 
+    }
+    .home-page>.container {
+        width: 100%;
+        height: calc(100% - 100px);
+        background: url(../../../images/bg-curvy-mobile.svg) 0px 180px  no-repeat;
+    }
+    main .home-page>.container .image-container {
+        width: 100%;
+    }
+    .home-page>.container .content {
+        width: 85%;
+    }
+    
+    .home-page>.container .content .title {
+        width: 100%;
+        line-height: 30px;
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .home-page>.container .content .text-container {
+        width: 92%;
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 30px;
+
+    }
+}

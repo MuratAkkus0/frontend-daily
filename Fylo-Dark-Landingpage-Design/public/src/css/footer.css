@@ -1,0 +1,122 @@
+main>footer {
+    width: 100%;
+    background-color: hsl(216, 53%, 9%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    padding: 50px 0;
+}
+
+main>footer .container {
+    width: 80%;
+
+}
+
+main>footer .container .footer-header img {
+    width: 200px;
+    margin-left: 10px;
+}
+
+/* Footer Main */
+
+main>footer .container .footer-main {
+    width: 100%;
+    margin-top: 30px;
+}
+
+main>footer .container .footer-main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+main>footer .container li {
+    font-size: 20px;
+    color: hsl(0, 0%, 85%);
+    margin-bottom: 25px;
+}
+
+main>footer .container .footer-main a:hover {
+    color: white;
+}
+
+main>footer .container i:nth-child(3), 
+main>footer .container i:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main>footer .container i {
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    margin-right: 15px;
+}
+
+
+main>footer .container .footer-main .footer-part {
+    padding: 10px;
+    margin-right: 15px;
+}
+
+main>footer .container .footer-main div.footer-part p {
+    display: flex;
+    align-items: top;
+    column-gap: 10px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 85%);
+    font-size: 20px;
+}
+
+
+main>footer .container .footer-main div.footer-part.part-one {
+    flex: 4;
+    font-family: "Raleway", sans-serif;
+}
+
+main>footer .footer-main div.footer-part.part-one p {
+    width: 100%;
+}
+
+
+main>footer .container .footer-main div.footer-part.part-two {
+    flex: 3;
+}
+
+main>footer .container .footer-main div.footer-part.part-three {
+    flex: 1;
+}
+
+main>footer .container .footer-main div.footer-part.part-four {
+    flex: 1;
+}
+
+main>footer .container .footer-main div.footer-part.part-five {
+    flex: 1;
+    margin-left: 80px;
+
+}
+
+main>footer .container .footer-main div.footer-part.part-five .icons {
+    display: flex;
+}
+
+main>footer .container .footer-main div.footer-part.part-five i {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main>footer .container .footer-main div.footer-part.part-five i:hover {
+    color: hsl(176, 68%, 64%);
+    border: 1px solid hsl(176, 68%, 64%);
+}
