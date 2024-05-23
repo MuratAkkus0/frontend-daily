@@ -1,0 +1,12 @@
+@import 'fonts.css';
+@import 'reset.css';
+@import 'header.css';
+@import 'banner.css';
+@import 'section1.css';
+@import 'section2.css';
+@import 'section3.css';
+@import 'footer.css';
+body{
+    background-color: #F4F7F9;
+    overflow-y: scroll;
+}

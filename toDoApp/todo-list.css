@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sans-Serif;
+}
+:root{
+    --title-font-size: clamp(14px,2.5vw,20px);
+    --text-font-size: clamp(12px,2.5vw,18px);
+    --title-bg-color: #fafafa;
+    --main-border-color: #e0e0e0;
+    --main-padding: 10px 20px;
+    --main-delete-color: #ff5050;
+    --main-li-bg-color:#f1f1f1;
+    --main-text-color: rgba(110, 110, 110, 0.77);
+}
+input{
+    outline: none;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+body,html{
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .card-container{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.container .card-container .title{
+    width: 100%;
+    padding: 10px 0px;
+    font-weight: 600;
+    font-size: var(--title-font-size);
+}
+.container .card-container .input-card{
+    border: 1px solid var(--main-border-color);
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.input-card > .card-title{
+    border: 1px solid var(--main-border-color);
+    width: 100%;
+    padding: var(--main-padding);
+    background-color: var(--title-bg-color);
+    font-size: var(--title-font-size);
+}
+.input-card > .input-box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 10px 20px;
+    padding: 10px 0;
+}
+.input-card > .input-box > input{
+    height: 30px;
+    padding: 0 30px 0 10px;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid var(--main-border-color);
+}
+.input-card > .input-box > input:focus{
+    outline: none;
+    box-shadow: 0px 0px 3px 0.3px #3495e8;
+    border: 1px solid black;
+}
+.input-card > .input-box > .add-Btn {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #3496E9;
+    color: white;
+    border-radius: 0px 5px 5px 0px;
+    transition: all .3s ease;
+}
+.input-card > .input-box > .add-Btn:hover {
+    font-size: 28px;
+}
+.container .card-container > .task-list{
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    min-width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.card-container .task-list .task-title{
+    border: 1px solid var(--main-border-color);
+    border-bottom-color: #b9b9b9;
+    font-size: var(--title-font-size);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--main-padding);
+    background-color: var(--title-bg-color);
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0px 2px 1px 0px rgba(201, 201, 201, 0.82);
+    z-index: 1;
+}
+.card-container .task-list .delete-all{
+    background-color: var(--title-bg-color);
+    border: 1px solid var(--main-delete-color);
+    font-weight: 500;
+    font-size: clamp(10px,2.5vw,13px);
+    color: red;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: all .3s ease;
+}
+.card-container .task-list .delete-all:hover{
+    transform: scaleX(1.05) scaleY(1.05) scaleZ(1.05);
+    background-color: var(--main-delete-color);
+    color: white;
+}
+.task-list .tasks{
+    width: 100%;
+    flex: 1;
+}
+.task-list .tasks ul li.task{
+    width: 100%;
+    border: 1px solid var(--main-border-color);
+    border-bottom: 1px solid #b6b6b6;
+    color: var(--main-text-color);
+    font-size: var(--text-font-size);
+    padding: 10px 20px;
+    min-height: 40px;
+    position: relative;
+    background-color: var(--main-li-bg-color);
+}
+.task-list .tasks ul li.task:last-child{
+    border-radius: 0 0 5px 5px;
+}
+.task-list .tasks ul li.task > .edit-task
+{
+    position: absolute;
+    right: 35px;
+    font-size: 14px;
+    transition: transform .3s ease;
+}
+
+.task-list .tasks ul li.task > .delete
+{
+    color: #bdbdbd;
+    position: absolute;
+    right: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    transition: transform .3s ease;
+}
+.task-list .tasks ul li.task > .cross{
+    color: #bdbdbd;
+    position: absolute;
+    right: 20px;
+    font-weight: 600;
+    font-size: 12px;
+    transition: transform .3s ease;
+}
+.task-list .tasks ul li.task > .tick{
+    color: #bdbdbd;
+    position: absolute;
+    right: 35px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: transform .3s ease;
+}
+.task-list .tasks ul li.task > .tick:hover{
+    color: green;
+    transform: scaleX(1.15) scaleY(1.15) scaleZ(1.15);
+
+}
+.task-list .tasks ul li.task > .icons:hover{
+    color: var(--main-delete-color);
+    transform: scaleX(1.15) scaleY(1.15) scaleZ(1.15);
+}
+
+.task-list .tasks ul li.task input{
+    width: 94%;
+    border: none;
+    color: var(--main-text-color);
+    font-size: var(--text-font-size);
+    background-color: var(--main-li-bg-color);
+    padding-bottom: 2px;
+    margin-left: -5px;
+    padding-left: 5px;
+    border-bottom: 1px solid var(--main-text-color);
+}
+
+.task-list .tasks ul li.task input:focus{
+    outline: none;
+    border-bottom: 1.5px solid var(--main-text-color);
+}
+
+
+@media only screen and (max-width: 768px){
+    .container .card-container{
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .container .card-container{
+        width: 85%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .container .card-container{
+        width: 50%;
+    }
+}
+

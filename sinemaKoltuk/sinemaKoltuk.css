@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: Sans-Serif;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+.container {
+    user-select: none;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f2f2f;
+    position: relative;
+
+}
+
+.container .app {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app .screen {
+    width: 100%;
+    height: 10%;
+    border: #cccccc;
+    background-color: white;
+    box-shadow: 0px 2px 8px 0px whitesmoke;
+    margin-bottom: 35px;
+}
+
+.app .seats {
+    width: clamp(300px, 100%, 600px);
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    overflow: auto;
+}
+
+.app .seats .seat {
+    background-color: #7D7D7D;
+    width: clamp(25px, 100%, 25px);
+    height: clamp(25px, 100%, 25px);
+    border-radius: 5px;
+    margin: 2px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.app .seats .seat:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.app .seats .left-seats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: clamp(60px, 22%, 85px);
+}
+
+.app .seats .right-seats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: clamp(60px, 22%, 85px);
+}
+
+.app .seats .middle-seats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: clamp(120px, 35%, 140px);
+}
+
+.app .select-box {
+    width: 100%;
+    height: clamp(40px, 20%, 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-box .movies {
+    position: relative;
+    width: clamp(180px, 50%, 300px);
+    height: 25px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 25px;
+    background-color: rgb(174, 3, 3);
+    color: rgba(245, 245, 245, 0.89);
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: "Segoe UI";
+    transition: all .2s ease;
+    z-index: 4;
+
+
+}
+
+.select-box .movies .arrow {
+    display: block;
+    position: absolute;
+    width: 10px;
+    right: 0px;
+    top: 0;
+    font-weight: 800;
+    transition: all .2s ease;
+    background-color: rgb(174, 3, 3);
+}
+
+.select-box .movies .arrow:hover {
+    font-size: 18px;
+    right: 2px;
+}
+
+.select-box .active:not(.choose:first-child) {
+    border-bottom: 2px solid darkred;
+    background-color: rgb(147, 0, 0);
+}
+
+.select-box .movies .choose:not(.active) {
+    display: none;
+    background-color: #af0303;
+    border-bottom: 1px solid #8d1818;
+    transition: all .3s ease;
+}
+
+.select-box .movies .choose:hover:not(.active):not(.choose:first-child) {
+    transform: scale(1.03, 1.03);
+    background-color: rgb(147, 0, 0);
+}
+
+.select-box .movies li.choose {
+    z-index: 4;
+    cursor: pointer;
+}
+
+.select-box .movies li.choose:nth-child(2):not(.active) {
+    border-top: 1px inset #da0606;
+}
+
+.app .seat-status {
+    display: flex;
+    justify-content: flex-start;
+    height: 10%;
+    width: clamp(300px, 100%, 600px);
+    background-color: black;
+}
+
+.app .status {
+    padding-left: 20px;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.app .seat-status .choosed {
+    border: 1px solid white;
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    background-color: #f9e789;
+    position: relative;
+
+}
+
+.app .seat-status .free {
+    border: 1px solid white;
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    background-color: #7c7d7d;
+    position: relative;
+}
+
+.app .seat-status .full {
+    border: 1px solid white;
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    background-color: #fdfdfe;
+    position: relative;
+}
+
+.app .seat-status .choosed::after {
+    content: 'Seçili';
+    color: whitesmoke;
+    position: absolute;
+    left: 30px;
+    line-height: 25px;
+}
+
+.app .seat-status .free::after {
+    content: 'Boş';
+    color: whitesmoke;
+    position: absolute;
+    left: 30px;
+    line-height: 25px;
+}
+
+.app .seat-status .full::after {
+    content: 'Dolu';
+    color: whitesmoke;
+    position: absolute;
+    left: 30px;
+    line-height: 25px;
+}
+
+.total {
+    width: 90%;
+    height: 40px;
+    overflow: auto;
+    position: absolute;
+    bottom: 12%;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.74);
+    margin-top: 30px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+

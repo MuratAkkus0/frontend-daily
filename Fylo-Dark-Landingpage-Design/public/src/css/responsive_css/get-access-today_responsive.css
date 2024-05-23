@@ -1,0 +1,31 @@
+@media screen and (max-width: 767px) {
+    main>.get-access-today .container {
+        width: 85%;
+        padding: 50px 30px;
+        row-gap: 20px;
+        box-shadow: 0px 0px 18px 1px hsl(216, 53%, 9%);
+    }
+
+    main>.get-access-today .container .title {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    main>.get-access-today .container .text {
+        width: 91%;
+        font-size: 14px;
+    }
+
+    main>.get-access-today .container .input-area {
+        margin-top: 10px;
+    }
+
+    main>.get-access-today .container .input-area form {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    main>.get-access-today .container .input-area input {
+        width: 100%;
+    }
+}

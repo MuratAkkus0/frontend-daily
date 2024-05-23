@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+}
+ul{
+    list-style-type:none;
+}
+input:focus{
+    outline: none;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    display: flex;
+    height: 100%;
+}
+.container .sidebar{
+    width: 300px;
+    min-width: 300px;
+    border-right: 1px solid #ccc;
+    background-color: #f3f3f3;
+
+}
+
+.container .sidebar .search{
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 5px 10px;
+}
+.container .sidebar .search input{
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    flex: 1;
+    padding: 0 15px 0 30px;
+}
+.container .sidebar .search i{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #878787;
+}
+.container .sidebar .contact{
+    overflow: auto;
+    padding-bottom: 15px;
+    height: calc(100% - 40px);
+}
+.container .sidebar .contact ul{
+}
+.container .sidebar .contact ul li a{
+    display: flex;
+    height: 60px;
+    padding: 0 10px;
+    text-decoration: none;
+    vertical-align: center;
+    cursor: pointer;
+}
+.container .sidebar .contact ul li a:first-child{
+    padding-top: 10px;
+}
+.container .sidebar .contact ul li a.active{
+    background-color: #fff;
+}
+.container .sidebar .contact ul li a:hover:not(.active){
+    background-color: #fff;
+}
+.container .sidebar .contact ul li img{
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin-right: 10px;
+}
+.container .sidebar .contact ul li a .userinfo{
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+    position: relative;
+}
+.container .sidebar .contact ul li a .name{
+    color: #242424;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+.container .sidebar .contact ul li a .recent-messages{
+    color: #8d8d8d;
+    font-size: 13px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient:vertical;
+    overflow: hidden;
+}
+.container .sidebar .contact ul li a .notification{
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 30px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    line-height: 20px;
+    font-weight: 500;
+    background-color: #fd0414;
+}
+.container .sidebar .contact ul li a .notification:empty{
+    display: none;
+}
+.container .contain{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.container .contain .message-head{
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+.container .contain .message-head .profile-photo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.container .contain .message-head img{
+    width: 30px;
+    height: 30px;
+    min-height: 30px;
+    min-width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.container .contain .message-head .userinfo{
+    display: flex;
+    align-items: center;
+}
+.container .contain .message-head .name{
+    font-size: 13px;
+    font-weight: 600;
+}
+.container .contain .message-head .time{
+    font-size: 10px;
+    font-weight: 500;
+    color: #8d8d8d;
+}
+.container .contain .message-head .actions{
+    margin-left: auto;
+}
+.container .contain .message-head .actions ul{
+    display: flex;
+
+}
+
+.container .contain .message-head .actions ul li a{
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    display: block;
+    color: #8d8d8d;
+    text-align: center;
+    line-height: 30px;
+}
+.container .contain .message-content{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.container .contain .message-content::before{
+    content: '';
+    flex:1;
+}
+.container .contain .message-content .message{
+    display: flex;
+    flex-direction: column;
+}
+.container .contain .message-content .message .buble{
+    background-color: #f4f4f4;
+    align-self: flex-start;
+    padding: 5px 10px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+.container .contain .message-content .message.me .buble{
+    align-self: flex-end;
+    background-color: #1c8bef;
+    color: #fff;
+}
+.container .contain .message-content .message .time{
+    font-size: 12px;
+    font-weight: 500;
+    color: #8d8d8d;
+    margin: 5px;
+}
+.container .contain .message-content .message.me .time{
+    align-self: flex-end;
+}
+
+
+.container .contain .message-form {
+    background-color: #f2f2f2;
+    display: flex;
+    border-top: 1px solid #ccc;
+    padding: 10px 15px;
+}
+.container .contain .message-form .pointer{
+    cursor: pointer;
+}
+.container .contain .message-form .emoji{
+    background-color: #2a8eed;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    min-height: 30px;
+    min-width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .contain .message-form .emoji a{
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+
+}
+.container .contain .message-form .input{
+    flex: 1;
+    display: flex;
+    margin: 0 5px;
+}
+.container .contain .message-form .input input{
+    flex: 1;
+    border-radius:30px;
+    outline: none;
+    border: none;
+    padding-left: 15px;
+    padding: 0 15px;
+}
+.container .contain .message-form .voice{
+    width: 30px;
+    height: 30px;
+    min-height: 30px;
+    min-width: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: #fc4c1f;
+}
+.container .contain .message-form .voice a{
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+.container .contain .message-form .photo{
+    --width: 30px;
+    background-color: #40a244;
+    width: var(--width);
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+.container .contain .message-form .photo a {
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
