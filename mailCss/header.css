@@ -1,3 +1,7 @@
+@import './responsiveCss/header_responsive.css';
+*{
+    flex-shrink: 0;
+}
 header {
     height: 80px;
     padding: 0 120px;
@@ -48,12 +52,14 @@ header .logo {
     transform: scale(1.01);
 }
 
-header>menu {
+menu {
     display: flex;
     gap: 10px;
+
 }
 
 menu>.menu-item {
+    display: block;
     color: #505050;
     padding: 10px;
     transition: all .2s linear;

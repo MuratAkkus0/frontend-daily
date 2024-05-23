@@ -1,9 +1,11 @@
+@import 'responsiveCss/footer_responsive.css';
 footer{
     width: 100%;
     height: 250px;
     padding: 25px 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #b1bcb8;
 }
 .footer-container{
@@ -17,7 +19,7 @@ footer{
     grid-template-rows: repeat(1, 1fr);
     gap: 30px;
 }
-.grid-container .grid-item > .address{
+.grid-item .address{
     display: flex;
     gap: 20px;
     line-height: 30px;
