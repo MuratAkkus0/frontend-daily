@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bahnschrift";
+}
+a{
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+}
+.container {
+    max-width: 1300px;
+    padding: 0 50px;
+    margin: auto;
+}
+.container .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.container .navbar .logo{
+    margin-top: 2%;
+    user-select: none;
+}
+.container .navbar .logo img {
+    width: 90px;
+}
+.container .navbar .icon{
+    position: relative;
+    z-index: 1;
+}
+.container .navbar .icon i{
+    font-size: 20px;
+    position: absolute;
+    top: -14px;
+    cursor: pointer;
+}
+.container .navbar .icon .notification{
+    opacity: 0;
+    position: absolute;
+    right: 100%;
+    top: -15px;
+    margin-right: 20px;
+    background-color: #602f0f;
+    color: floralwhite;
+    padding: 0;
+    cursor: pointer;
+    text-align: justify-all;
+    width: 200px;
+    height: 0px;
+    border-radius: 0px 0px 10px 10px;
+}
+.container .navbar .icon i:hover + div.notification{
+    height: 100px;
+    opacity: 1;
+    transition: all .33s ease;
+    padding: 20px 30px;
+}
+.container .navbar .icon i:hover{
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+.navbar nav{
+    margin-right: 35%;
+    user-select: none;
+}
+.navbar nav > ul li{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    margin-right: 25px;
+}
+.navbar nav > ul li a{
+    color: #45230c;
+    font-weight: 600;
+}
+.navbar nav > ul li a:hover{
+    display: block;
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+.container .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .content .col-2{
+    flex-basis: 50%;
+    margin-left: 60px;
+
+}
+.container .content .col-2 .box{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    margin-top: -60px;
+    user-select: none;
+}
+.container .content .col-2 .box img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    mix-blend-mode: screen;
+    border:none;
+    outline: none;
+}
+.container .content .col-2 .box video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border: none;
+    outline: none;
+}
+.container .content .textbox{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 35px;
+    user-select: none;
+}
+
+.container .content .textbox h1,span{
+    grid-row: 1;
+}
+.container .content .col-2 h1{
+    font-family: "Segoe UI Black";
+    font-size: 3rem;
+    color: #45230c;
+
+}
+.container .content .col-2 span{
+    font-size: 6rem;
+    display: block;
+    margin-left: 80px;
+    line-height: 60px;
+    font-family: "Segoe UI Black"
+
+}
+.container .content .col-2 p{
+    margin-top: 30px;
+    font-weight: 400;
+    text-align: justify;
+    grid-row: 2;
+}
+.container .content .col-2 a{
+    grid-row: 3;
+    text-align: center;
+    margin-left: 70%;
+    color: whitesmoke;
+    background-color: #ad571b;
+    padding: 15px 0;
+    border-radius: 50px;
+    width: 30%;
+}
+.container .content .col-2 a:hover{
+    background-color: #c46c29;
+    transform: scale(1.1);
+    transition: all .5s ease;
+    position: relative;
+    z-index: 1;
+}

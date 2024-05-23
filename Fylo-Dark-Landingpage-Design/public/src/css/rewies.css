@@ -1,0 +1,56 @@
+main>.rewies {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px 150px 0;
+    background-color: hsl(218, 28%, 13%);
+}
+
+main>.rewies .container {
+    width: 70%;
+    background: url(../../images/bg-quotes.png) 5% top no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    padding: 35px 5px;
+}
+
+main>.rewies .container .box {
+    padding: 25px;
+    border-radius: 5px;
+    background-color: hsl(219, 30%, 18%);
+    box-shadow: 5px 5px 18px 1px hsl(216, 53%, 9%);
+}
+
+main>.rewies .container .box .text-container {
+    width: 100%;
+    color: hsl(0, 0%, 85%);
+    line-height: 25px;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 30px;
+}
+
+main>.rewies .container .box .user-container {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+main>.rewies .container .box .user-container .user-photo img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+main>.rewies .container .box .user-container .user-info-text h1 {
+    color: white;
+    margin-bottom: 3px;
+}
+
+main>.rewies .container .box .user-container .user-info-text h3 {
+    color: hsl(0, 0%, 70%);
+    font-size: 14px;
+    font-weight: 400;
+}

@@ -1,0 +1,31 @@
+@import './reset.css';
+@import './font-family.css';
+@import './header.css';
+@import './home-page.css';
+@import './advantages.css';
+@import './works.css';
+@import './rewies.css';
+@import './get-acccess-today.css';
+@import './footer.css';
+/* Responsive Css Files */
+@import './responsive_css/header_responsive.css';
+@import './responsive_css/home-page_responsive.css';
+@import './responsive_css/advantages_responsive.css';
+@import './responsive_css/works_responsive.css';
+@import './responsive_css/rewies_responsive.css';
+@import './responsive_css/get-access-today_responsive.css';
+@import './responsive_css/footer_responsive.css';
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    font-size: 16px;
+
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+}
+
