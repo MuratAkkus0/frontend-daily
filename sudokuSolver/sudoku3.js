@@ -205,6 +205,7 @@ function controlProccess() {
     updatedSudokuDefault.forEach((item)=>{
         item.forEach((num)=>{
             if(typeof num === "string"){
+                setTimeOut(()=>{},3000)
                 bruteForceMain();
                 isFinish = false;
             }else{
