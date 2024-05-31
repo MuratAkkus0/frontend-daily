@@ -171,6 +171,7 @@ function doBruteForce() {
     if (possibleNumbers.length == 1) {
         currentSudokuBox.value = possibleNumbers[0];
         currentSudokuBox.disabled = 'true';
+        setTimeOut(()=>{},3000);
     }
     controlProccess();
 }
@@ -205,7 +206,6 @@ function controlProccess() {
     updatedSudokuDefault.forEach((item)=>{
         item.forEach((num)=>{
             if(typeof num === "string"){
-                setTimeOut(()=>{},3000)
                 bruteForceMain();
                 isFinish = false;
             }else{
