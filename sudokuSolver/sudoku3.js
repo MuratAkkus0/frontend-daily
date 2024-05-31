@@ -184,8 +184,7 @@ function controlPossibleKeys() {
         if (!currentSquareNumbers.includes(num)) {
             if (!currentColumn.includes(num) && !currentRow.includes(num)) {
                 possibleNumbers.push(num);
-                setTimeout(()=>{},1500)
-                currentSudokuBox.innerHTML = `<span style="colou:green">${num}</span>`;
+                currentSudokuBox.innerHTML = `<span style="color:green;">${num}</span>`;
             }
         }
     })
