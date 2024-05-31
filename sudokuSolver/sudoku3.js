@@ -171,7 +171,7 @@ function doBruteForce() {
     if (possibleNumbers.length == 1) {
         currentSudokuBox.value = possibleNumbers[0];
         currentSudokuBox.disabled = 'true';
-        setTimeOut(()=>{},3000);
+        setTimeout(()=>{},3000);
     }
     controlProccess();
 }
