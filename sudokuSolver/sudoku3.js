@@ -171,7 +171,7 @@ function doBruteForce() {
     if (possibleNumbers.length == 1) {
         currentSudokuBox.value = possibleNumbers[0];
         currentSudokuBox.disabled = 'true';
-        setTimeout(()=>{},3000);
+        setTimeOut(()=>{},3000);
     }
     controlProccess();
 }
@@ -184,7 +184,7 @@ function controlPossibleKeys() {
         if (!currentSquareNumbers.includes(num)) {
             if (!currentColumn.includes(num) && !currentRow.includes(num)) {
                 possibleNumbers.push(num);
-                currentSudokuBox.innerHTML = `<span style="color:green;">${num}</span>`;
+                currentSudokuBox.value = ${num};
             }
         }
     })
