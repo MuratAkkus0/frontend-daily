@@ -184,6 +184,7 @@ function controlPossibleKeys() {
         if (!currentSquareNumbers.includes(num)) {
             if (!currentColumn.includes(num) && !currentRow.includes(num)) {
                 possibleNumbers.push(num);
+                currentSudokuBox.value = `<span style="colou:green">${num}</span>`;
             }
         }
     })
