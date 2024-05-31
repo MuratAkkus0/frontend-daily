@@ -167,10 +167,13 @@ function calcMod(num) {
 
 function doBruteForce() {
     controlPossibleKeys();
-    controlPossibleKeysStepTwo();
+    setTimeout(() => {
+        controlPossibleKeysStepTwo();
+    },1500)
     if (possibleNumbers.length == 1) {
         currentSudokuBox.value = possibleNumbers[0];
         currentSudokuBox.disabled = 'true';
+        
     }
     controlProccess();
 }
