@@ -1,0 +1,80 @@
+section.add_new_word{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.new_word_box{
+    width: 40rem;
+    padding: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 1rem;
+    background-color: #ffffff;
+}
+.new_word_box > h1{
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.new_word_box #new_word_form{
+    display: flex;
+    flex-direction: column;
+}
+#new_word_form > *:focus{
+    outline : 0.5px solid var(--black--)
+}
+#new_word_form > select{
+    margin-bottom: 1rem;
+    width: 20rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    padding-left: 0.5rem;
+    cursor : pointer;
+}
+#new_word_form > select option{
+    padding-left: 0.5rem;
+    cursor: pointer;
+}
+#new_word_form > input{
+    margin-bottom: 1rem;
+    width: 20rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    padding-left: 0.5rem;
+}
+#new_word_form > textarea{
+    height: 5rem;
+    padding: 0.5rem;
+    resize: none;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+
+}
+#new_word_form > label{
+    margin-bottom: 0.5rem;
+}
+#new_word_form > label:after{
+    content: ":";
+    padding-left: 0.2rem;
+}
+#new_word_form > button{
+    width: 100%;
+    color: var(--gray-background--);
+    background-color: var(--black--);
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    font-size: 1.1rem;
+    padding: .5rem;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+#new_word_form > button:hover{
+    background-color: var(--black-hover--);
+    box-shadow: 0px 8px 8px -5px rgba(235, 235, 235, 0.484);
+}

@@ -8,7 +8,9 @@ toolbarItems.forEach(item => {
 });  
 // Active import function for all pages
 const studyCardsUrl = "/Word_Repeat/pages/study-cards.html" ;
+const addWordUrl = "/Word_Repeat/pages/new-word.html" ;
 const turnCardMdlLoc = "./turn_card.js" ;
+const addWordMdlLoc = "./add_word.js" ;
 
 window.addEventListener('load', () => {
     switch (window.location.pathname) {
@@ -17,6 +19,12 @@ window.addEventListener('load', () => {
             break;
         case '/frontend-daily/Wort_Repeat/wort-pool.html':  
         break;  
+        case addWordUrl:
+            
+            import(addWordMdlLoc).then(
+                addWordMdl => addWordMdl.addEventListener()
+            );
+            break;
     }
 });
 export {toolbarItems};
