@@ -7,7 +7,7 @@ toolbarItems.forEach(item => {
     item.addEventListener('click', activeTracker);
 });  
 // Active import function for all pages
-const studyCardsUrl = "/Wort_Repeat/pages/study-cards.html" ;
+const studyCardsUrl = "/Word_Repeat/pages/study-cards.html" ;
 const turnCardMdlLoc = "./turn_card.js" ;
 
 window.addEventListener('load', () => {
