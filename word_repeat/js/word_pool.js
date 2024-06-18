@@ -15,8 +15,12 @@ function getWords(e) {
     configObject = {
         category : category,
     }
+
+    setConfigLocalStorage(configObject);
     window.location.href = `/Word_Repeat/pages/study-cards.html`
 }
 
-// Exporting
-export { configObject }
+// setting config to local storage
+function setConfigLocalStorage(category) {
+    sessionStorage.setItem("config", JSON.stringify(category));
+}
