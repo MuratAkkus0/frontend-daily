@@ -11,7 +11,7 @@ let activeTracker = async (e) => {
     
     // Code for find Pages Urls
     let url = await e.target.getAttribute('href');
-    window.location.pathname = `/frontend-daily/Word_Repeat${url}`;
+    window.location.pathname = `/Word_Repeat${url}`;
     
     e.preventDefault();
 }

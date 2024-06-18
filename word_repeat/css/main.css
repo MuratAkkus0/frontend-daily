@@ -5,6 +5,14 @@
 @import "./home.css";
 @import "./wortPool.css";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+@import "./add_new_word.css";
+:root {
+  --black--: rgb(74, 74, 74);
+  --black-hover--: rgb(84, 84, 84);
+  --blue--: rgb(62, 116, 203);
+  --gray-background--: #fdfdfd;
+  --gray--: #ccc;
+}
 
 * {
   font-family: "Poppins", sans-serif;
@@ -20,7 +28,7 @@ main {
   width: 100%;
   height: 100%;
   display: flex;
-  background-color: #fdfdfd;
+  background-color: var(--gray-background--);
 }
 .study-cards-cont {
   width: 100%;
@@ -70,7 +78,7 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  border: 1px solid #ccc;
+  border: 1px solid var(--gray--);
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -101,7 +109,7 @@ main {
   cursor: pointer;
   padding: 10px 20px;
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid var(--gray--);
   border-radius: 3px;
   margin-top: 15px;
   transition: transform 0.1s linear;
