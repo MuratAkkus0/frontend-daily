@@ -1,0 +1,51 @@
+@media screen and (min-width: 260px) and (max-width: 767px) {
+    main header {
+        position: relative;
+        height: auto;
+        padding: 0;
+        flex-direction: column;
+        border-bottom: 0;
+        z-index: 1;
+    }
+
+    header .logo {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .logo .logo-container {
+        flex: 1;
+        justify-content: center;
+    }
+
+    header .mobile-menu {
+        display: block;
+        opacity: 1;
+    }
+
+    header menu {
+        overflow: hidden;
+        gap: 0;
+        height: 0px;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fdfdfd29;
+        box-shadow: 0px 10px 18px 0px #d5d5d50f;
+        transition: all .2s linear;
+    }
+
+    header menu.active {
+        height: 195px;
+        transition: all .2s linear;
+    }
+
+    menu>.menu-item {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #fafafa;
+    }
+}
