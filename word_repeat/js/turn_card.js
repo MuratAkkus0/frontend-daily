@@ -1,10 +1,8 @@
+// Variable Defination
 let card = document.querySelector('.card');
 let isFirstClick = true;
 
-let turnCardTrigger = (e) => {
-    document.querySelector('.turn-btn').addEventListener('click', turnCard);
-}
-
+// Turning Card Function
 let turnCard = (e) => {
     if (isFirstClick) {
         card.style.transform = 'rotateY(180deg)'
@@ -18,9 +16,8 @@ let turnCard = (e) => {
 let currentCard = document.querySelector('.card');
 let nextCard = document.querySelector('.next-card');
 let nextBtn = document.querySelector('.btn-right');
-console.log(nextCard)
 
-nextBtn.addEventListener('click', getNextCard);
+// nextBtn.addEventListener('click', getNextCard);
 
 function getNextCard(e) {
     console.log('next card')
@@ -32,4 +29,4 @@ function getNextCard(e) {
 
 
 
-export { turnCardTrigger };
+export { turnCard };
