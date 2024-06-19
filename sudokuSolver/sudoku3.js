@@ -167,13 +167,11 @@ function calcMod(num) {
 
 function doBruteForce() {
     controlPossibleKeys();
-    setTimeout(() => {
-        controlPossibleKeysStepTwo();
-    },1500)
+    controlPossibleKeysStepTwo();
     if (possibleNumbers.length == 1) {
         currentSudokuBox.value = possibleNumbers[0];
         currentSudokuBox.disabled = 'true';
-        
+
     }
     controlProccess();
 }
@@ -202,20 +200,20 @@ function controlPossibleKeysStepTwo() {
 }
 
 function controlProccess() {
-    if(isFinish){
+    if (isFinish) {
         return;
     }
-    updatedSudokuDefault.forEach((item)=>{
-        item.forEach((num)=>{
-            if(typeof num === "string"){
+    updatedSudokuDefault.forEach((item) => {
+        item.forEach((num) => {
+            if (typeof num === "string") {
                 bruteForceMain();
                 isFinish = false;
-            }else{
+            } else {
                 isFinish = true;
             }
         })
 
-        
+
     })
 
 }
