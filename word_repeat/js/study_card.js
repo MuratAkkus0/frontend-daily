@@ -124,7 +124,14 @@ function getNextCard(e) {
     // }
 
     //  Card Turninng Control
-
+    if (!isFirstClick) {
+        turnCard()
+        setTimeout(() => {
+            initializeCard();
+        }, 200)
+    } else {
+        initializeCard();
+    }
     cardIndex++;
 }
 
