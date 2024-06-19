@@ -1,5 +1,6 @@
 // importing the module
 import { getItemsFromLocalStorage } from "./localStorage_Proccesses.js";
+import { turnCard, isFirstClick } from "./turn_card.js";
 
 // selecting the element
 const card_front_face = document.querySelector("div.card-face.front");
@@ -53,16 +54,20 @@ function createRandomNumber(words) {
 }
 
 function getNextCard(e) {
-    initializeCard();
+    if (!isFirstClick) {
+        turnCard()
+        setTimeout(() => {
+            console.log('waiting for turn card')
+            initializeCard();
+        },200)
+    }else{
+        initializeCard();
+    }
+    
+
 }   
 
 function getPrevCard(e) {    
     console.log('prev card')    
-}
-
-async function turnCard(e) {
-    console.log('turn card')
-    const turnCardMdlLoc = "./turn_card.js" ;
-    import(turnCardMdlLoc).then(turnCardTrigger => turnCardTrigger.turnCard());
 }
 

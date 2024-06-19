@@ -29,4 +29,4 @@ function getNextCard(e) {
 
 
 
-export { turnCard };
+export { turnCard, isFirstClick };
