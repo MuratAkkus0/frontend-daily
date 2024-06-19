@@ -32,12 +32,23 @@ function initializeCard() {
 
 // Create Random Index Number
 function createRandomNumber(words) {
+    let usedNumbers;
     let prevRandomNum = randomIndex;
     randomIndex = Math.floor(Math.random() * words.length);
-    if  (randomIndex === prevRandomNum) {
+    if (sessionStorage.getItem('usedNumbers') === null) {
+        usedNumbers = [];
+    } else {
+        usedNumbers = JSON.parse(sessionStorage.getItem('usedNumbers'));
+    }
+    if  (usedNumbers.includes(randomIndex)) {
+        if (usedNumbers.length === words.length)    {
+            sessionStorage.clear();   
+        }
         createRandomNumber(words);
     }else{
         randomIndex = randomIndex;
+        usedNumbers.push(randomIndex);
+        sessionStorage.setItem('usedNumbers', JSON.stringify(usedNumbers));
     }
 }
 
