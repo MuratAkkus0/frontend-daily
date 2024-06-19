@@ -24,25 +24,44 @@ function addEventListener() {
 
 // Initializing Card
 function initializeCard() {
+    let config = JSON.parse(sessionStorage.getItem('config'));
     let words = getItemsFromLocalStorage();
+    words = filterCategory(config.category,words)
     createRandomNumber(words)
     let randomWord = words[randomIndex];
     card_front_face.innerHTML = randomWord.word;
     card_back_face.innerHTML = randomWord.word_tr;
 }
 
+function filterCategory(category,words){
+    let filteredWords = [];
+    if (category === null) {return filteredWords}
+    for (let i = 0; i < words.length; i++){
+        if (words[i].word_type === category) {
+            filteredWords.push(words[i]);
+        }
+    }
+    return filteredWords;
+}
+
 // Create Random Index Number
 function createRandomNumber(words) {
     let usedNumbers;
+    let prevIndex = randomIndex;
     randomIndex = Math.floor(Math.random() * words.length);
+    // All Cards are used
     if (sessionStorage.getItem('usedNumbers') === null) {
         usedNumbers = [];
     } else {
         usedNumbers = JSON.parse(sessionStorage.getItem('usedNumbers'));
     }
+    // Duplicate Index Number Control
     if  (usedNumbers.includes(randomIndex)) {
         if (usedNumbers.length === words.length)    {
-            sessionStorage.clear();   
+            sessionStorage.removeItem('usedNumbers'); 
+            if (prevIndex !== null) {
+                sessionStorage.setItem('usedNumbers', JSON.stringify([prevIndex]));
+            }
         }
         createRandomNumber(words);
     }else{
@@ -56,7 +75,6 @@ function getNextCard(e) {
     if (!isFirstClick) {
         turnCard()
         setTimeout(() => {
-            console.log('waiting for turn card')
             initializeCard();
         },200)
     }else{
