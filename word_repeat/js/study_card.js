@@ -14,7 +14,7 @@ let words;
 let randomIndex;
 let prevCount = 1;
 let cardIndex = 0;
-let isMixingFinished = false;
+let isMixing = true;
 
 addEventListener();
 
@@ -97,41 +97,34 @@ function createRandomNumber(words) {
 // Mixing Cards
 function mixCards(e) {
     card_mix_btn.classList.toggle('active');
-    isMixingFinished = false;
+    isMixing = true;
 }
 
 // Getting Next Card
 function getNextCard(e) {
-    
-    let usedNumbers = JSON.parse(sessionStorage.getItem('usedNumbers'));
+    // cardIndex = 0 Default Value
     prevCount = 1;
+    console.log('wordslength: ' + words.length + ' cardIndex: ' + cardIndex)
     if (cardIndex >= (words.length - 1)) {
         cardIndex = words.length - 1;
         console.log(cardIndex)
-        isMixingFinished = true;
-        card_mix_btn.classList.remove('active');
         alert('Son Karttasiniz');
-
+        
+        // isMixing = false;
+        // card_mix_btn.classList.remove('active');
         return;
     }
 
-    if (isMixingFinished) {
+    // if (!isMixing) {
 
-        let nextWord = words[cardIndex];
+    //     let nextWord = words[cardIndex];
 
-        card_front_face.innerHTML = nextWord.word;
-        card_back_face.innerHTML = nextWord.word_tr;
-    }
+    //     card_front_face.innerHTML = nextWord.word;
+    //     card_back_face.innerHTML = nextWord.word_tr;
+    // }
 
     //  Card Turninng Control
-    if (!isFirstClick) {
-        turnCard()
-        setTimeout(() => {
-            initializeCard();
-        }, 200)
-    } else {
-        initializeCard();
-    }
+
     cardIndex++;
 }
 
