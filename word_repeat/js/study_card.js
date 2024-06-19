@@ -34,7 +34,6 @@ function initializeCard() {
 // Create Random Index Number
 function createRandomNumber(words) {
     let usedNumbers;
-    let prevRandomNum = randomIndex;
     randomIndex = Math.floor(Math.random() * words.length);
     if (sessionStorage.getItem('usedNumbers') === null) {
         usedNumbers = [];
