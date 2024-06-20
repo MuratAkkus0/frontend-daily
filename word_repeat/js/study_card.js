@@ -13,7 +13,6 @@ const card_mix_btn = document.querySelector(".mix-cards");
 let words;
 let randomIndex;
 let prevCount = 1;
-let cardIndex = 0;
 let isMixing = true;
 
 addEventListener();
@@ -102,26 +101,7 @@ function mixCards(e) {
 
 // Getting Next Card
 function getNextCard(e) {
-    // cardIndex = 0 Default Value
     prevCount = 1;
-    console.log('wordslength: ' + words.length + ' cardIndex: ' + cardIndex)
-    if (cardIndex >= (words.length - 1)) {
-        cardIndex = words.length - 1;
-        console.log(cardIndex)
-        alert('Son Karttasiniz');
-        
-        // isMixing = false;
-        // card_mix_btn.classList.remove('active');
-        return;
-    }
-
-    // if (!isMixing) {
-
-    //     let nextWord = words[cardIndex];
-
-    //     card_front_face.innerHTML = nextWord.word;
-    //     card_back_face.innerHTML = nextWord.word_tr;
-    // }
 
     //  Card Turninng Control
     if (!isFirstClick) {
@@ -132,16 +112,12 @@ function getNextCard(e) {
     } else {
         initializeCard();
     }
-    cardIndex++;
+
 }
 
 // Getting Previous Card
 function getPrevCard(e) {
-    if (cardIndex <= 0) {
-        cardIndex = 0;
-        alert('Ilk Karttasiniz');
-        return;
-    }
+
     
     // Getting previous random number from usedNumbers session storage
     // here getting wir previous random nummer using als index of usedNumbers - prevCount
@@ -162,6 +138,5 @@ function getPrevCard(e) {
         card_front_face.innerHTML = prevWord.word;
         card_back_face.innerHTML = prevWord.word_tr;
     } else { return };
-    cardIndex--;
 }
 
