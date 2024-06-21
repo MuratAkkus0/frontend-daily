@@ -5,6 +5,7 @@ section.add_new_word{
 }
 .new_word_box{
     width: 40rem;
+    max-height: 55rem;
     padding: 3.5rem;
     display: flex;
     flex-direction: column;
@@ -15,7 +16,7 @@ section.add_new_word{
     background-color: #ffffff;
 }
 .new_word_box > h1{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 1.3rem;
     font-weight: 500;
 }
@@ -49,7 +50,7 @@ section.add_new_word{
     padding-left: 0.5rem;
 }
 #new_word_form > textarea{
-    height: 5rem;
+    height: 4rem;
     padding: 0.5rem;
     resize: none;
     border-radius: 0.5rem;
