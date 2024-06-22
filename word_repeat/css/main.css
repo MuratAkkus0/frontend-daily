@@ -128,7 +128,7 @@ main {
   top: 50%;
   left: 0.1rem;
   transform: translateY(-50%);
-  transition: all 0.1s linear;
+  transition: all 0.2s linear;
 }
 .mix-cards.active{
   background-color: var(--blue--);

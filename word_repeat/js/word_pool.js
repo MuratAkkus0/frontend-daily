@@ -17,7 +17,7 @@ function getWords(e) {
     }
 
     setConfigLocalStorage(configObject);
-    window.location.href = `/Word_Repeat/pages/study-cards.html`
+    window.location.href = `/pages/study-cards.html`
 }
 
 // setting config to local storage
