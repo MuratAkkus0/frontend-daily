@@ -148,11 +148,6 @@ include("./connection.php");
       error_reporting(E_ALL);
       ini_set('display_errors', 1);
       include("./connection.php");
-
-      // $sql = "SELECT Rezepte.Rez_Bez, Rezepte.Rez_Besch, Rezepte.Rez_Preis, Rezepte.Img_Link, IFNULL(Bes_Rez.Menge, 0) AS menge 
-      // FROM Rezepte
-      // LEFT JOIN Bes_Rez ON Rezepte.Rez_ID = Bes_Rez.Rez_ID
-      // LEFT JOIN Rez_Zutat ON Rezepte.Rez_ID = Rez_Zutat.Rez_ID";
       $sql = "SELECT Rezepte.Rez_Bez, Rezepte.Rez_Besch, Rezepte.Rez_Preis, Rezepte.Img_Link, IFNULL(Bes_Rez.Menge, 0) AS menge 
         FROM Rezepte
         LEFT JOIN Bes_Rez ON Rezepte.Rez_ID = Bes_Rez.Rez_ID
