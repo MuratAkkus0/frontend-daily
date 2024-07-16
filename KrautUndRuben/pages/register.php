@@ -71,62 +71,6 @@
             />
           </div>
 
-          <!-- <div class="login_form-input-area">
-            <label for="country">Country:</label>
-            <input required
-              class="login_form-input"
-              type="text"
-              name="country"
-              id="country"
-              placeholder="Country"
-            />
-          </div>
-
-          <div class="login_form-input-area">
-            <label for="city">City:</label>
-            <input required
-              class="login_form-input"
-              type="text"
-              name="city"
-              id="city"
-              placeholder="City"
-            />
-          </div>
-
-          <div class="login_form-input-area">
-            <label for="address">Street:</label>
-            <input required
-              type="text"
-              name="street"
-              id="street"
-              placeholder="Street"
-              class="login_form-input"
-            />
-          </div>
-          <div class="login_form-input-area hous_num-area">
-            <div class="login_form-input-area">
-              <label for="hous_num">Hous Nr.:</label>
-              <input required
-                type="text"
-                name="hous_num"
-                id="hous_num"
-                placeholder="Hous Number"
-                class="login_form-input"
-              />
-            </div>
-
-            <div class="login_form-input-area">
-              <label for="postal_code">PLZ:</label>
-              <input required
-                class="login_form-input"
-                type="text"
-                name="postal_code"
-                id="postal_code"
-                placeholder="Postal Code"
-              />
-            </div>
-          </div> -->
-
           <div class="login_form-input-area username_input-area">
             <label for="username">Username:</label>
             <input
