@@ -24,7 +24,4 @@
 .mobile-menu_active {
   color: var(--gray-background--);
 }
-.mobile-menu_active .menu-item {
-  animation: mobile_menu-show 0.3s ease-in-out 0.4s 1 forwards normal;
-}
 
