@@ -49,16 +49,3 @@ function loadSqlStatement(){
         sqlStatementsTextarea.value = value;
 });
 }
-// SQL Params History Function
-
-loadSqlHistory();
-function loadSqlHistory(){
-    const params = new URLSearchParams(window.location.search);
-    console.log('active');
-    params.forEach((value,key) => {
-        console.log(key, value);
-        if (key == 'statement'){
-            sqlStatementsTextarea.value = value;
-        }
-});
-}
