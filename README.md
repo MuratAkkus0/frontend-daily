@@ -14,4 +14,7 @@
         -ViTest,Jest
         -Playwright
         -PostgreSql
-        -
+        -React Native
+        -Astro  
+        -Electron.js
+        -C++ (Fehmi Uyarin yeni kursundan)
