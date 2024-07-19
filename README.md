@@ -19,7 +19,7 @@
  -React Native
  -Astro  
  -Electron.js
- -C# (Enes Bayram)
+ -C# (Enes Bayram,Ahmet Kaya (Youtube) )
  -C++ (Fehmi Uyarin yeni kursundan)
  -Assembly
  -Rust
