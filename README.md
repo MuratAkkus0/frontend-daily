@@ -7,6 +7,7 @@
 
  -TypeScript
  -React
+ -Vue
  -Node.js
  -Npm
  -Vite,Esbuild Bundlers
@@ -23,3 +24,8 @@
  -Assembly
  -Rust
  -Go
+
+    **Gökhan Yayla Youtube Listesinden Ögren
+-JS ORM (Object Relational Model) Kütüphanesi edin. (etc. Sequelize )
+-JS Vue ile Options Api Kullanarak component leri tekrar kullan . Composition api ye göre daha iyi ve isim cakismasi yok.
+-JS Vue State Management Kütüphanesi Ögren. (pinia veya vuex). ** Pinia = Composition api **
