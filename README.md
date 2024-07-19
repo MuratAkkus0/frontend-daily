@@ -15,15 +15,19 @@
  -ViTest,Jest
  -Playwright
  -Php
- -PostgreSql
+ -PostgreSql(Udemy, Murat Yücedag)
  -React Native
  -Astro  
  -Electron.js
- -C# (Enes Bayram,Ahmet Kaya (Youtube) )
+ -C# (Enes Bayram,Ahmet Kaya(C#,Arduino), Kaan Academy, Emir Özdemir(OOP,C# SQL Dersleri), Yazilim Teknolojileri(videolar cok yeni),Adim Adim Yazilim (.Net,Sql,C# Hersey burada ve yeni. Sirali C# listesi)(Youtube) )
  -C++ (Fehmi Uyarin yeni kursundan)
  -Assembly
  -Rust
  -Go
+
+## ** Hangi dili ögrenirssen ögren daha sonra youtubdan o dilin algoritma sorularini kesinlikle cöz **
+-Genel Algoritma Dersleri (Murat Yücedag)
+-C# Algoritma (Taner Saydam, Murat Yazilim)
 
     **Gökhan Yayla Youtube Listesinden Ögren
 -JS ORM (Object Relational Model) Kütüphanesi edin. (etc. Sequelize )
