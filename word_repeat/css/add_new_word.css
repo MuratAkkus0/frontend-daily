@@ -83,6 +83,7 @@ section.add_new_word{
     .new_word_box{
         width: 100%;
         max-height: fit-content;
+        border: none;
     }
     #new_word_form > select{
         margin-bottom: 1rem;
