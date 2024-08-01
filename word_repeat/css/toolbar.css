@@ -1,6 +1,6 @@
 .toolbar-container {
   height: 100%;
-  border: 1px solid black;
+  border: 1px solid var(--black--);
   background-color: rgb(74, 74, 74);
   color: rgb(238, 238, 238);
   flex: 3;
@@ -66,14 +66,14 @@ li.active {
     background-color: var(--gray-background--);
     color: var(--black--);
     display: flex;
-    transition: all .3s;
-    
+    border: 0;
+    border-bottom: 1px solid var(--black--);
   }
   .menu{
     flex: 1;
     height: 0;
     overflow: hidden;
-    transition: 1.4s all;
+    transition: height .3s .55s; 
   }
   .menu .menu-item{
     transform: translateX(-150%);
