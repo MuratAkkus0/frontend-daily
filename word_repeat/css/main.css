@@ -7,7 +7,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
 @import "./add_new_word.css";
 :root {
-  --black--: rgb(74, 74, 74);
+  --black--: rgb(9, 9, 9);
   --black-hover--: rgb(84, 84, 84);
   --blue--: rgb(62, 116, 203);
   --gray-background--: #fdfdfd;
