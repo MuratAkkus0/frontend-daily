@@ -54,7 +54,7 @@
 
 li.active {
   color: var(--gray-background--);
-  background-color: var(--black--);
+  background-color: var(--black-hover--);
 }
 
 .menu-item a {
