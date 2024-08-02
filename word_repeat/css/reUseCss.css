@@ -43,4 +43,9 @@
     .ctg-grid-cont4x{
         flex: none;
     }
+    .item-cont4x{
+        padding: 1rem;
+        grid-template-columns: 95%;
+        grid-template-rows: repeat(4, 200px);
+    }
 }

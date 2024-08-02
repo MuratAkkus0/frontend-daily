@@ -12,6 +12,7 @@
   --blue--: rgb(62, 116, 203);
   --gray-background--: #fdfdfd;
   --gray--: #ccc;
+  --black-border--:rgba(0, 0, 0, 0.076);
 }
 
 * {
@@ -157,4 +158,9 @@ main {
 }
 .control-buttons .btn:active {
   transform: scale(0.97);
+}
+@media screen and (max-width: 767px) {
+  html,body,main{
+    height: fit-content;
+  }
 }

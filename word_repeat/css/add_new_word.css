@@ -1,8 +1,12 @@
-section.add_new_word{
+section.add_new_word {
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.new_word_box{
+
+.new_word_box {
     width: 25rem;
     max-height: fit-content;
     padding: 1.8rem;
@@ -14,33 +18,38 @@ section.add_new_word{
     border-radius: 1rem;
     background-color: #ffffff;
 }
-.new_word_box > h1{
+
+.new_word_box>h1 {
     margin-bottom: 1rem;
     font-size: 1.3rem;
     font-weight: 500;
 }
 
-.new_word_box #new_word_form{
+.new_word_box #new_word_form {
     display: flex;
     flex-direction: column;
 }
-#new_word_form > *:focus{
-    outline : 0.5px solid var(--black--)
+
+#new_word_form>*:focus {
+    outline: 0.5px solid var(--black--)
 }
-#new_word_form > select{
+
+#new_word_form>select {
     margin-bottom: 1rem;
     width: 20rem;
     height: 2rem;
     border-radius: 0.5rem;
     border: 1px solid #ccc;
-    padding-left: 0.5rem;
-    cursor : pointer;
-}
-#new_word_form > select option{
     padding-left: 0.5rem;
     cursor: pointer;
 }
-#new_word_form > input{
+
+#new_word_form>select option {
+    padding-left: 0.5rem;
+    cursor: pointer;
+}
+
+#new_word_form>input {
     margin-bottom: 1rem;
     width: 20rem;
     height: 2rem;
@@ -48,7 +57,8 @@ section.add_new_word{
     border: 1px solid #ccc;
     padding-left: 0.5rem;
 }
-#new_word_form > textarea{
+
+#new_word_form>textarea {
     height: 4rem;
     padding: 0.5rem;
     resize: none;
@@ -56,14 +66,17 @@ section.add_new_word{
     margin-bottom: 1rem;
 
 }
-#new_word_form > label{
+
+#new_word_form>label {
     margin-bottom: 0.5rem;
 }
-#new_word_form > label:after{
+
+#new_word_form>label:after {
     content: ":";
     padding-left: 0.2rem;
 }
-#new_word_form > button{
+
+#new_word_form>button {
     width: 100%;
     color: var(--gray-background--);
     background-color: var(--black--);
@@ -74,49 +87,63 @@ section.add_new_word{
     cursor: pointer;
     transition: all .2s ease;
 }
-#new_word_form > button:hover{
+
+#new_word_form>button:hover {
     background-color: var(--black-hover--);
     box-shadow: 0px 8px 8px -5px rgba(235, 235, 235, 0.484);
 }
 
-@media screen and (max-width : 767px){
-    .new_word_box{
+@media screen and (max-width : 767px) {
+    .new_word_box {
         width: 100%;
         max-height: fit-content;
         border: none;
+        background-color: var(--gray-background--);
+        padding: 1rem;
+
     }
-    #new_word_form > select{
+    #new_word_form{
+        width: 95%;
+    }
+
+    #new_word_form>select {
         margin-bottom: 1rem;
         width: 100%;
     }
-    #new_word_form > select option{
+
+    #new_word_form>select option {
         padding-left: 0.5rem;
         cursor: pointer;
     }
-    #new_word_form > input{
+
+    #new_word_form>input {
         margin-bottom: 1rem;
-        width: 95%;
+        width: 100%;
         height: 2rem;
         border-radius: 0.5rem;
         border: 1px solid #ccc;
         padding-left: 0.5rem;
     }
-    #new_word_form > textarea{
+
+    #new_word_form>textarea {
         height: 4rem;
         padding: 0.5rem;
         resize: none;
         border-radius: 0.5rem;
         margin-bottom: 1rem;
-    
+
     }
-    #new_word_form > label{
+
+    #new_word_form>label {
         margin-bottom: 0.5rem;
     }
-    #new_word_form > label:after{
+
+    #new_word_form>label:after {
         content: ":";
         padding-left: 0.2rem;
     }
-    #new_word_form > button{
+
+    #new_word_form>button {
         width: 100%;
         color: var(--gray-background--);
         background-color: var(--black--);
@@ -127,12 +154,12 @@ section.add_new_word{
         cursor: pointer;
         transition: all .2s ease;
     }
-    #new_word_form > button:hover{
+
+    #new_word_form>button:hover {
         background-color: var(--black-hover--);
         box-shadow: 0px 8px 8px -5px rgba(235, 235, 235, 0.484);
     }
 
 }
-@media screen and (min-width : 260px) and (max-width : 760px){
-    
-}
+
+@media screen and (min-width : 260px) and (max-width : 760px) {}
