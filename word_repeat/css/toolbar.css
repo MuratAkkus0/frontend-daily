@@ -7,6 +7,26 @@
   transition: all 0.3s;
 }
 
+.logo {
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-family: "Playwrite BE VLG", cursive;
+  background-color: var(--black--);
+  border-bottom: 1px solid var(--gray-background--);
+  user-select: none;
+  cursor: pointer;
+}
+
+.logo>span {
+  position: relative;
+  bottom: 1.3rem;
+  left: .65rem;
+  font-size: .65rem;
+}
+
 .mobile-menu-icon i {
   display: none;
   margin: 1rem;
@@ -56,6 +76,10 @@ li.active {
     align-items: center;
   }
 
+  .logo-container {
+    width: 100%;
+  }
+
   .toolbar-container {
     flex: none;
     height: fit-content;
@@ -65,25 +89,28 @@ li.active {
     background-color: #ffffff;
     color: var(--black--);
     display: flex;
+    flex-wrap: wrap;
     border: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.076);
   }
-  .menu{
+
+  .menu {
     flex: 1;
     height: 0;
     overflow: hidden;
-    transition: height .3s .55s; 
+    transition: height .3s .55s;
   }
-  .menu .menu-item{
+
+  .menu .menu-item {
     transform: translateX(-150%);
   }
 
-  .menu.active{
+  .menu.active {
     height: 100%;
     transition: all .95s;
   }
 
-  .mobile-menu-icon{
+  .mobile-menu-icon {
     flex-shrink: 0;
   }
 
@@ -96,46 +123,53 @@ li.active {
     0% {
       transform: translateX(0px);
     }
+
     100% {
       transform: translateX(-150%);
     }
   }
+
   @keyframes mobile_menu-show {
     0% {
       transform: translateX(-150%);
     }
+
     100% {
       transform: translateX(0px);
     }
   }
-  
+
   /* menu fade in */
   .menu.active .menu-item:nth-child(1) {
     animation: mobile_menu-show 0.3s ease-in-out 0s 1 forwards normal;
   }
+
   .menu.active .menu-item:nth-child(2) {
     animation: mobile_menu-show 0.3s ease-in-out 0.1s 1 forwards normal;
   }
+
   .menu.active .menu-item:nth-child(3) {
     animation: mobile_menu-show 0.3s ease-in-out 0.25s 1 forwards normal;
   }
+
   .menu.active .menu-item:nth-child(4) {
     animation: mobile_menu-show 0.3s ease-in-out 0.45s 1 forwards normal;
   }
+
   /* menu fade out */
   li.menu-item:nth-child(1) {
-  animation: mobile_menu-hide 0.5s ease-in-out 0.5s 1 backwards normal;
+    animation: mobile_menu-hide 0.5s ease-in-out 0.5s 1 backwards normal;
   }
-  
+
   li.menu-item:nth-child(2) {
-  animation: mobile_menu-hide 0.5s ease-in-out 0.3s 1 backwards normal;
+    animation: mobile_menu-hide 0.5s ease-in-out 0.3s 1 backwards normal;
   }
-  
+
   li.menu-item:nth-child(3) {
-  animation: mobile_menu-hide 0.5s ease-in-out 0.2s 1 backwards normal;
+    animation: mobile_menu-hide 0.5s ease-in-out 0.2s 1 backwards normal;
   }
-  
+
   li.menu-item:nth-child(4) {
-  animation: mobile_menu-hide 0.5s ease-in-out 0s 1 backwards normal;
+    animation: mobile_menu-hide 0.5s ease-in-out 0s 1 backwards normal;
   }
 }
