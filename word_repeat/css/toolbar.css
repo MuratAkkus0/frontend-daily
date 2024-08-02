@@ -1,7 +1,7 @@
 .toolbar-container {
   height: 100%;
   border: 1px solid var(--black--);
-  background-color: rgb(74, 74, 74);
+  background-color: var(--black--);
   color: rgb(238, 238, 238);
   flex: 3;
   transition: all 0.3s;
@@ -64,7 +64,7 @@ li.active {
 }
 
 .menu-item a:hover:not(li.active > a) {
-  background-color: rgb(84, 84, 84);
+  background-color: var(--black-hover--);
 }
 
 .menu-item i {
