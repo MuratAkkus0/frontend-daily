@@ -1,0 +1,12 @@
+header{
+    width: 100%;
+    height: var(--header-height);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size-big);
+    font-weight: 700;
+    background-color: black;
+    color: white;
+}
