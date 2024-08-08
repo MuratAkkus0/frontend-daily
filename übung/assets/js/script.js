@@ -19,10 +19,8 @@ const resetBtn = document.querySelector(".reset_btn").addEventListener("click", 
 
 (async () => {
     await getApiData(prompt);
-    if (apiResult.llm_output) {
         popupText.textContent = apiResult.llm_output;
         popup.style.display = "flex";
-    }
 
     console.log(apiResult)
 })()
