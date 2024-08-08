@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+    <title>Speed Wars</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h2>Speed Wars</h2>
+        </header>
+        <div class="game_popup">
+            <div class="popup_box">
+                <div class="popup_content">
+                    <div class="popup_img">
+                        <img src="http://wordwars.000.pe/tony.png" alt="Tony">
+                    </div>
+                    <div class="popup_text">I'm Tony Stark, the smartest man of all time! Challenging me would be the wrongest decision you've ever made. Let's get started, I've got a party to get to.
+                        <p></br>- Tony Stark</p>
+                    </div>
+                </div>
+
+                <button class="popup_btn">Play</button>
+            </div>
+        </div>
+        <section class="game_container">
+            <div class="game_board">
+                <div class="player_box" data-id="tony">
+                    <div class="user_info">
+                        <img style="height: 10rem;" src="http://wordwars.000.pe/tony.png" alt="tony" class="user_img">
+                        <div class="user_name" data-id="tony">Tony Stark</div>
+                    </div>
+                    <div class="user_score">
+                        <p><span class="score" data-id="tony">0</span> Points</p>
+                    </div>
+                    <div class="user_answer">
+                        <div class="user_answer-box">
+                            <input type="text" class="answer_input" data-id="tony">
+                            <button class="answer_btn" data-id="tony">Ok</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="player_box">
+                    <div class="user_info">
+                        <div class="user_name">Bruce Banner</div>
+                    </div>
+                    <div class="user_score">
+                        <p><span class="score">0</span> Points</p>
+                    </div>
+                    <div class="user_answer">
+                        <div class="user_answer-box">
+                            <input type="text" class="answer_input">
+                            <button class="answer_btn">Ok</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="game_control">
+                    <div class="countdown_container">
+                        <div class="circle" data-anim="base left">
+                            <p class="countdown_remain"><span class="remain_second"></span> s</p>
+                        </div>
+                    </div>
+                    <div class="control_btn_container">
+                        <button type="button" class="control_btn start_btn">Start</button>
+                        <button type="button" class="control_btn stop_btn">Stop</button>
+                        <button type="button" class="control_btn reset_btn">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./assets/js/script.js" type="module"></script>
+</body>
+
+</html>
