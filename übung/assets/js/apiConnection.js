@@ -1,5 +1,6 @@
 let result;
-
+let alertControl = false;
+let llmActive = true;
 async function getApiData(prompt) {
     const url = 'https://brigid-ai.p.rapidapi.com/v2';
     let options = {
@@ -19,7 +20,19 @@ async function getApiData(prompt) {
         fetch(url, options)
             .then(response => {
                 if (!response.ok) {
+                    llmActive = false;
+                    if (!alertControl) {
+                        alert("Api Daily Usage Limit Exceeded Unfortunately, Tony Stark is currently offline.");
+                        alertControl=true;
+                    }
                     reject('Network response was not ok: ' + response.statusText);
+                    document.querySelector(".user_name[data-id='tony']").style.textDecoration = "line-through";
+                    document.querySelector(".answer_input[data-id='tony']").disabled = true;
+                    document.querySelector(".answer_btn[data-id='tony']").disabled = true;
+                } else {
+                    document.querySelector(".user_name[data-id='tony']").style.textDecoration = "none";
+                    document.querySelector(".answer_input[data-id='tony']").disabled = false;
+                    document.querySelector(".answer_btn[data-id='tony']").disabled = false;
                 }
                 return response.text();
             })
@@ -45,4 +58,4 @@ async function getApiData(prompt) {
         console.error('There has been a problem with your fetch operation:', error);
     }
 }
-export { getApiData, result as apiResult } ;
+export { getApiData, result as apiResult , llmActive};
