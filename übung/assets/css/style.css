@@ -11,6 +11,7 @@
 }
 
 :root {
+    user-select: none;
     --header-height: 5rem;
     --countdown-circle-size: 15rem;
     --font-size-big: 2rem;
@@ -44,7 +45,7 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
