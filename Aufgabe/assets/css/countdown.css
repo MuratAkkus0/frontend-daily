@@ -1,0 +1,26 @@
+.countdown_container{
+    margin: auto auto;
+    grid-column: 1/11;
+    grid-row: 1/4;
+    width: var(--countdown-circle-size);
+    height: var(--countdown-circle-size);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-big);
+    background: conic-gradient(red 1deg, #ddd 1deg);
+    transition: .2s all;
+}
+.circle{
+    width: calc(var(--countdown-circle-size) - 20px);
+    height: calc(var(--countdown-circle-size) - 20px);
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.countdown_remain{
+    font-size: var(--font-size-big);
+}
