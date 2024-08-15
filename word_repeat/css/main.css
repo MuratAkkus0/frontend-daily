@@ -103,6 +103,21 @@ main {
   transform-origin: top;
 }
 
+.card_examples {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 70%;
+  height: 15%;
+}
+.card_examples > *{
+  width: 100%;
+  font-size: 1.2rem;
+}
+
 .control-buttons {
   display: flex;
   justify-content: center;

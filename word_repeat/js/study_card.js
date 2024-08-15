@@ -5,6 +5,9 @@ import { turnCard, isFirstClick } from "./turn_card.js";
 // selecting the element
 const card_front_face = document.querySelector("div.card-face.front");
 const card_back_face = document.querySelector("div.card-face.back");
+const card_example_tr = document.querySelector(".example_tr");
+const card_example_de = document.querySelector(".example_de");
+const card_example_en = document.querySelector(".example_en");
 const card_turn_btn = document.querySelector(".turn-btn");
 const card_prev_btn = document.querySelector(".btn-left");
 const card_next_btn = document.querySelector(".btn-right");
@@ -44,7 +47,10 @@ function initializeCard() {
         createRandomNumber(words)
         let randomWord = words[randomIndex];
         card_front_face.innerHTML = randomWord.word;
-        card_back_face.innerHTML = randomWord.word_tr;
+        card_back_face.innerHTML = 'TR: ' + randomWord.word_tr + '<br/>' + 'EN: ' + randomWord.word_en;
+        card_example_tr.innerHTML = 'TR: ' + randomWord.word_example_tr;
+        card_example_de.innerHTML = 'DE: ' + randomWord.word_example;
+        card_example_en.innerHTML = 'EN: ' + randomWord.word_example_en;
     }
 }
 
@@ -114,7 +120,7 @@ function getNextCard(e) {
         alert('Son Karttasiniz');
         return;
     }
-    
+
     //  Card Turninng Control
     if (!isFirstClick) {
         turnCard()
