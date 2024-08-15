@@ -13,7 +13,7 @@ const card_mix_btn = document.querySelector(".mix-cards");
 let words;
 let randomIndex;
 let prevCount = 1;
-let cardIndex = 0;
+let cardIndex = 1;
 let isMixing = true;
 
 addEventListener();
@@ -79,7 +79,7 @@ function createRandomNumber(words) {
 
     // Duplicate Index Number Control
     function checkDuplicate() {
-        if (usedNumbers.includes(newIndex) || newIndex === randomIndex) {
+        if (usedNumbers.includes(newIndex)) {//Silindi|| newIndex === randomIndex
             if (usedNumbers.length >= words.length) {
                 sessionStorage.removeItem('usedNumbers');
             }
@@ -88,7 +88,6 @@ function createRandomNumber(words) {
             prevIndex = randomIndex;
             randomIndex = newIndex;
             usedNumbers.push(randomIndex);
-            console.log(usedNumbers);
             sessionStorage.setItem('usedNumbers', JSON.stringify(usedNumbers));
             sessionStorage.setItem('prevIndex', JSON.stringify([prevIndex]))
         }
@@ -97,32 +96,25 @@ function createRandomNumber(words) {
 // Mixing Cards
 function mixCards(e) {
     card_mix_btn.classList.toggle('active');
-    isMixing = true;
+    if (card_mix_btn.classList.contains('active')) {
+        isMixing = true;
+
+    } else {
+        isMixing = false;
+    }
 }
 
 // Getting Next Card
 function getNextCard(e) {
-    // cardIndex = 0 Default Value
+    // cardIndex = 1 Default Value
     prevCount = 1;
-    console.log('wordslength: ' + words.length + ' cardIndex: ' + cardIndex)
-    if (cardIndex >= (words.length - 1)) {
+
+    if (cardIndex >= words.length) {
         cardIndex = words.length - 1;
-        console.log(cardIndex)
         alert('Son Karttasiniz');
-        
-        // isMixing = false;
-        // card_mix_btn.classList.remove('active');
         return;
     }
-
-    // if (!isMixing) {
-
-    //     let nextWord = words[cardIndex];
-
-    //     card_front_face.innerHTML = nextWord.word;
-    //     card_back_face.innerHTML = nextWord.word_tr;
-    // }
-
+    
     //  Card Turninng Control
     if (!isFirstClick) {
         turnCard()
@@ -132,6 +124,7 @@ function getNextCard(e) {
     } else {
         initializeCard();
     }
+
     cardIndex++;
 }
 
@@ -142,7 +135,7 @@ function getPrevCard(e) {
         alert('Ilk Karttasiniz');
         return;
     }
-    
+
     // Getting previous random number from usedNumbers session storage
     // here getting wir previous random nummer using als index of usedNumbers - prevCount
     let usedNumbers = JSON.parse(sessionStorage.getItem('usedNumbers'));
