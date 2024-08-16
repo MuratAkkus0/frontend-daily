@@ -147,10 +147,9 @@
 }
 
 @media screen and (max-width: 768px) {
-    main {
-        height: 100vh !important;
+    .study-cards-cont{
+        flex: none;
     }
-
     .card-container {
         grid-template-columns: repeat(20, 1fr);
         grid-template-rows: repeat(10, 1fr);
@@ -172,6 +171,6 @@
     }
 
     .card_examples>* {
-        font-size: 1.1rem
+        font-size: 1.1rem;
     }
 }
