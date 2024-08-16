@@ -86,6 +86,7 @@ function createRandomNumber(words) {
     // Duplicate Index Number Control
     function checkDuplicate() {
         if (usedNumbers.includes(newIndex)) {//Silindi|| newIndex === randomIndex
+            console.log(cardIndex)
             if (usedNumbers.length >= words.length) {
                 sessionStorage.removeItem('usedNumbers');
             }
@@ -112,10 +113,12 @@ function mixCards(e) {
 
 // Getting Next Card
 function getNextCard(e) {
+
     // cardIndex = 1 Default Value
     prevCount = 1;
-
-    if (cardIndex >= words.length) {
+    let usedNumbers = JSON.parse(sessionStorage.getItem('usedNumbers'));
+    console.log(words);
+    if (cardIndex >= words.length && usedNumbers.length >= words.length) {
         cardIndex = words.length - 1;
         alert('Son Karttasiniz');
         return;
@@ -132,6 +135,8 @@ function getNextCard(e) {
     }
 
     cardIndex++;
+    console.log(cardIndex)
+
 }
 
 // Getting Previous Card
@@ -162,5 +167,7 @@ function getPrevCard(e) {
         card_back_face.innerHTML = prevWord.word_tr;
     } else { return };
     cardIndex--;
+    console.log(cardIndex)
+
 }
 
