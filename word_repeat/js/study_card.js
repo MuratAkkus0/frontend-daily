@@ -167,7 +167,6 @@ function getPrevCard(e) {
         card_back_face.innerHTML = prevWord.word_tr;
     } else { return };
     cardIndex--;
-    console.log(cardIndex)
 
 }
 
