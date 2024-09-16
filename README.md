@@ -33,3 +33,6 @@
 -JS ORM (Object Relational Model) Kütüphanesi edin. (etc. Sequelize )
 -JS Vue ile Options Api Kullanarak component leri tekrar kullan . Composition api ye göre daha iyi ve isim cakismasi yok.
 -JS Vue State Management Kütüphanesi Ögren. (pinia veya vuex). ** Pinia = Composition api **
+
+
+##CTRL+F2 ayni kelimeyi iceren tüm kelimeleri secer ve ayni anda degistirmeni saglar
