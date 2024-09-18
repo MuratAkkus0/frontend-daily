@@ -5,7 +5,7 @@ import Jobs from "@/components/Jobs.vue";
 </script>
 
 <template>
-    <Hero title="Test Title" description="Test Description" />
+    <Hero />
     <Developers />
     <Jobs :limit="3" :showButton="true" />
 </template>
