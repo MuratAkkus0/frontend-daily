@@ -14,4 +14,6 @@ import VForDöngüler from './components/VForDöngüler.vue';
   <VIf_VShow_Farki />
   <br/>
   <VForDöngüler />
+  <br/> 
+  
 </template> 
