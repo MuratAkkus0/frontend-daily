@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, reactive,useTemplateRef, watchEffect } from 'vue';
+import { reactive,useTemplateRef, watchEffect } from 'vue';
 
 const formData = reactive({
   name: 'ali',
