@@ -3,6 +3,9 @@ import ComputedDetails_DynamicStyles from './components/ComputedDetails_DynamicS
 import EventListeners from './components/EventListeners.vue';
 import VIf_VShow_Farki from './components/VIf_VShow_Farki.vue';
 import VForDöngüler from './components/VForDöngüler.vue';
+import DynamicComponents from './components/DynamicComponents.vue';
+import CustomDirectives from './components/CustomDirectives.vue';
+import searchBox from './components/SearchBox.vue';
 import { onActivated, onBeforeMount, onBeforeUnmount, onBeforeUpdate, onDeactivated, onErrorCaptured, onMounted, onRenderTracked, onRenderTriggered, onServerPrefetch, onUnmounted, onUpdated, ref } from 'vue';
 
 
@@ -54,6 +57,9 @@ onMounted(() => {
 <template>
   <h1 :class="xBilesen.green" >App</h1>
   <h1 :class="$style.color" >App</h1>
+  <searchBox />
+  <CustomDirectives />
+  <DynamicComponents />
   <EventListeners />
   <br/>
   <ComputedDetails_DynamicStyles />

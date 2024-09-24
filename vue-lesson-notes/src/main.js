@@ -4,6 +4,15 @@ import App from './App.vue'
 import App2 from './App2.vue';
 
 const app = createApp(App);
+
+// Bu sekilde globale kendi filtreni tanimlayabilirsin.
+// $filters.UpperCaseFilter(value) seklindecagirilip kullanilir.
+app.config.globalProperties.$filters = {
+    UpperCaseFilter(value) {
+        return value.toUpperCase();
+    }
+}
+
 app.component('GlobalComp', {
     template: `
     <p>
