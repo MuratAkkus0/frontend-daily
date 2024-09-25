@@ -1,11 +1,5 @@
 <script setup>
-import ComputedDetails_DynamicStyles from './components/ComputedDetails_DynamicStyles.vue';
-import EventListeners from './components/EventListeners.vue';
-import VIf_VShow_Farki from './components/VIf_VShow_Farki.vue';
-import VForDöngüler from './components/VForDöngüler.vue';
-import DynamicComponents from './components/DynamicComponents.vue';
-import CustomDirectives from './components/CustomDirectives.vue';
-import searchBox from './components/SearchBox.vue';
+import router from './routes';
 import { onActivated, onBeforeMount, onBeforeUnmount, onBeforeUpdate, onDeactivated, onErrorCaptured, onMounted, onRenderTracked, onRenderTriggered, onServerPrefetch, onUnmounted, onUpdated, ref } from 'vue';
 
 
@@ -55,7 +49,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <h1 :class="xBilesen.green" >App</h1>
+  <router-view />
+  <!-- <h1 :class="xBilesen.green" >App</h1>
   <h1 :class="$style.color" >App</h1>
   <searchBox />
   <CustomDirectives />
@@ -63,12 +58,12 @@ onMounted(() => {
   <EventListeners />
   <br/>
   <ComputedDetails_DynamicStyles />
-  <br/>
+  <br/> -->
   <!-- Assatgida child dan parenta veri aktardik. Bu sayede childdan parentta tanimlanan genel degeri degistirebilir ve birden fazla komponentte ayni anda degisiklik olmasini saglayabiliriz. -->
-  <VIf_VShow_Farki :btnText="btnText" v-on:deneme="updateBtnText($event)"/>
+  <!-- <VIf_VShow_Farki :btnText="btnText" v-on:deneme="updateBtnText($event)"/>
   <br/>
   <VForDöngüler />
-  <br/> 
+  <br/>  -->
   
 </template> 
 
