@@ -12,7 +12,7 @@ export default {
     emits: ['transactionDeleted'],
     props: {
         transactions: {
-            type: Array,
+            type: Object,
             required: true
         }
     },
