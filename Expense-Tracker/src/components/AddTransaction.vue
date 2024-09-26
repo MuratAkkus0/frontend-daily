@@ -21,7 +21,7 @@ export default defineComponent({
   emits: ['transactionSubmitted'],
   props: {
     transactions: {
-      type: Array,
+      type: Object,
       required: true
     }
   },
@@ -42,7 +42,6 @@ export default defineComponent({
         text: form.text,
         amount: +form.amount
       }
-      console.log(generateUniqueId())
       useToast().success('Transaction added successfully!');
       context.emit('transactionSubmitted', newTransaction);
       form.text = '';
@@ -58,7 +57,7 @@ export default defineComponent({
           return;
         }
       })
-      return id;
+      return String(id);
     }
 
     return {
