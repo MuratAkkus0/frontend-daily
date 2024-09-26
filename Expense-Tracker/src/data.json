@@ -1,3 +1,44 @@
 {
-  "data": []
+  "data": [
+    {
+      "id": "190239803",
+      "text": "Maas",
+      "amount": 700
+    },
+    {
+      "id": "11514018",
+      "text": "Kira",
+      "amount": -220
+    },
+    {
+      "id": "463996947",
+      "text": "Telefonun Borcu",
+      "amount": -100
+    },
+    {
+      "id": "361468453",
+      "text": "Leistung Borcu",
+      "amount": -100
+    },
+    {
+      "id": "817365525",
+      "text": "Tel Faturasi",
+      "amount": -20
+    },
+    {
+      "id": "3879970",
+      "text": "Isyerinde Ögle Yemegi",
+      "amount": -220
+    },
+    {
+      "id": "765303381",
+      "text": "Sigara",
+      "amount": -50
+    },
+    {
+      "id": "957172776",
+      "text": "Kahvalti",
+      "amount": -100
+    }
+  ]
 }
