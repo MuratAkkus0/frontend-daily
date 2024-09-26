@@ -2,7 +2,7 @@
 
 ## This is my Frontend learn daily and when i making a new project i will add here .
 # New 
-
+--Sekans Diagrami Istegin yasam döngüsünü gösterir ona arada bak
 # To Do List
 
  -TypeScript
