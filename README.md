@@ -20,36 +20,36 @@ repos this index links to, not this one.
 
 | Folder | What it demonstrates | Superseded by |
 | --- | --- | --- |
-| `API_Practices` | `fetch`/XHR/async-await basics against public APIs | [`API_Practices`](https://github.com/MuratAkkus0/API_Practices) |
+| `API_Practices` | `fetch`/XHR/async-await basics against public APIs | [`API_Practices`](https://github.com/MuratAkkus0/api-practices) |
 | `Aufgabe` | A small "Speed Wars" countdown/quiz assignment | — |
-| `ChatScript` | A static fake chat/messenger UI prototype | [`ChatScript`](https://github.com/MuratAkkus0/ChatScript) |
-| `Expense-Tracker` | Vue 3 income/expense tracker backed by a `json-server` mock API | [`Vue_Expense_Tracker_LS`](https://github.com/MuratAkkus0/Vue_Expense_Tracker_LS) (the mock-API half now lives separately in [`expense-tracker-fake-api`](https://github.com/MuratAkkus0/expense-tracker-fake-api)) |
-| `Fylo-Dark-Landingpage-Design` | Frontend Mentor "Fylo" dark landing page challenge | [`FyloLandingPage`](https://github.com/MuratAkkus0/FyloLandingPage) |
+| `ChatScript` | A static fake chat/messenger UI prototype | [`ChatScript`](https://github.com/MuratAkkus0/chat-ui-clone) |
+| `Expense-Tracker` | Vue 3 income/expense tracker backed by a `json-server` mock API | [`Vue_Expense_Tracker_LS`](https://github.com/MuratAkkus0/expense-tracker-local) (the mock-API half now lives separately in [`expense-tracker-fake-api`](https://github.com/MuratAkkus0/expense-tracker-mock-api)) |
+| `Fylo-Dark-Landingpage-Design` | Frontend Mentor "Fylo" dark landing page challenge | [`FyloLandingPage`](https://github.com/MuratAkkus0/fylo-landing-page) |
 | `KrautUndRuben` | A German-language PHP + MySQL recipe/e-commerce practice site with an admin panel | — |
-| `LandingPage` | A CSS `mix-blend-mode` "Go To Africa" travel landing page | [`SimpleLandingPage`](https://github.com/MuratAkkus0/SimpleLandingPage) |
-| `LoginForm` | An animated login form UI (bundles an internal copy of the `mailCss` exercise) | [`AnimatedLoginForm`](https://github.com/MuratAkkus0/AnimatedLoginForm) |
+| `LandingPage` | A CSS `mix-blend-mode` "Go To Africa" travel landing page | [`SimpleLandingPage`](https://github.com/MuratAkkus0/simple-landing-page) |
+| `LoginForm` | An animated login form UI (bundles an internal copy of the `mailCss` exercise) | [`AnimatedLoginForm`](https://github.com/MuratAkkus0/animated-login-form) |
 | `NodeJs-lessons` | Node.js/Express + MongoDB fundamentals notes and a small API exercise | — |
-| `SimpleWebSite` | First plain HTML/CSS practice page (navbar + hero section) | [`MyFirstWebsite`](https://github.com/MuratAkkus0/MyFirstWebsite) |
-| `Weatherapp` | A weather lookup app against a public weather API | [`WeatherApp`](https://github.com/MuratAkkus0/WeatherApp) |
-| `adam-asmaca` | A hangman ("Adam Asmaca") word-guessing game | [`AdamAsmaca`](https://github.com/MuratAkkus0/AdamAsmaca) |
-| `animated_cards` | CSS hover/flip animated card components | [`AnimatedCards`](https://github.com/MuratAkkus0/AnimatedCards) |
-| `basic_slider` | A basic next/prev image slider (hard image swap, no transition) | [`FadeInSlider`](https://github.com/MuratAkkus0/FadeInSlider) |
-| `calculater` | A four-function calculator in plain JS | [`Calculater`](https://github.com/MuratAkkus0/Calculater) |
-| `carvis_project` | A car listing/showcase practice site | [`Carvis-Project`](https://github.com/MuratAkkus0/Carvis-Project) |
-| `egghead_io_clone` | A static clone of the egghead.io homepage layout | [`EggHeadIo-Clone`](https://github.com/MuratAkkus0/EggHeadIo-Clone) |
-| `furniture_webpage` | "Akkuslar Tischlerei" fictional carpentry business landing page | [`SimpleWebPage`](https://github.com/MuratAkkus0/SimpleWebPage) |
-| `imageWebsite` | An image search app calling the Unsplash API directly from the browser | [`ImageSearchApp`](https://github.com/MuratAkkus0/ImageSearchApp) |
-| `mailCss` | An HTML email layout/CSS practice template | [`MailInterface`](https://github.com/MuratAkkus0/MailInterface) |
-| `progress_steps` | An animated multi-step progress indicator | [`AnimatedProgressSteps`](https://github.com/MuratAkkus0/AnimatedProgressSteps) |
-| `quizApp` | A plain-JS multiple-choice quiz | [`QuizApp`](https://github.com/MuratAkkus0/QuizApp) |
-| `sinemaKoltuk` | A cinema seat reservation UI | [`CinemaSeatReservation`](https://github.com/MuratAkkus0/CinemaSeatReservation) |
-| `sudokuApp` | A playable sudoku board UI | [`SudokuApp`](https://github.com/MuratAkkus0/SudokuApp) |
-| `sudokuSolver` | A sudoku-solving algorithm exercise | [`JS_Sudoke_Solver`](https://github.com/MuratAkkus0/JS_Sudoke_Solver) |
-| `toDoApp` | A plain-JS to-do list | [`ToDoApp`](https://github.com/MuratAkkus0/ToDoApp) |
-| `valens-katolog` | A candle/product catalog landing page | [`ValensCatalog`](https://github.com/MuratAkkus0/ValensCatalog) |
+| `SimpleWebSite` | First plain HTML/CSS practice page (navbar + hero section) | [`MyFirstWebsite`](https://github.com/MuratAkkus0/my-first-website) |
+| `Weatherapp` | A weather lookup app against a public weather API | [`WeatherApp`](https://github.com/MuratAkkus0/weather-dashboard) |
+| `adam-asmaca` | A hangman ("Adam Asmaca") word-guessing game | [`AdamAsmaca`](https://github.com/MuratAkkus0/hangman-game) |
+| `animated_cards` | CSS hover/flip animated card components | [`AnimatedCards`](https://github.com/MuratAkkus0/animated-cards) |
+| `basic_slider` | A basic next/prev image slider (hard image swap, no transition) | [`FadeInSlider`](https://github.com/MuratAkkus0/fade-in-slider) |
+| `calculater` | A four-function calculator in plain JS | [`Calculater`](https://github.com/MuratAkkus0/calculator-vanilla-js) |
+| `carvis_project` | A car listing/showcase practice site | [`Carvis-Project`](https://github.com/MuratAkkus0/carvis-voice-assistant) |
+| `egghead_io_clone` | A static clone of the egghead.io homepage layout | [`EggHeadIo-Clone`](https://github.com/MuratAkkus0/egghead-clone) |
+| `furniture_webpage` | "Akkuslar Tischlerei" fictional carpentry business landing page | [`SimpleWebPage`](https://github.com/MuratAkkus0/simple-web-page) |
+| `imageWebsite` | An image search app calling the Unsplash API directly from the browser | [`ImageSearchApp`](https://github.com/MuratAkkus0/image-search) |
+| `mailCss` | An HTML email layout/CSS practice template | [`MailInterface`](https://github.com/MuratAkkus0/mail-client-ui) |
+| `progress_steps` | An animated multi-step progress indicator | [`AnimatedProgressSteps`](https://github.com/MuratAkkus0/animated-progress-steps) |
+| `quizApp` | A plain-JS multiple-choice quiz | [`QuizApp`](https://github.com/MuratAkkus0/quiz-platform) |
+| `sinemaKoltuk` | A cinema seat reservation UI | [`CinemaSeatReservation`](https://github.com/MuratAkkus0/cinema-booking) |
+| `sudokuApp` | A playable sudoku board UI | [`SudokuApp`](https://github.com/MuratAkkus0/sudoku-game) |
+| `sudokuSolver` | A sudoku-solving algorithm exercise | [`JS_Sudoke_Solver`](https://github.com/MuratAkkus0/sudoku-solver) |
+| `toDoApp` | A plain-JS to-do list | [`ToDoApp`](https://github.com/MuratAkkus0/todo-vanilla-js) |
+| `valens-katolog` | A candle/product catalog landing page | [`ValensCatalog`](https://github.com/MuratAkkus0/valens-catalog) |
 | `vue-lesson-notes` | Vue 3 fundamentals notes (directives, `v-for`/`v-if`, dynamic components, computed properties) | — |
-| `vue-project` | First Vue project, wired to a fake/mock API | [`First-Vue-Project-Fake-Api`](https://github.com/MuratAkkus0/First-Vue-Project-Fake-Api) |
-| `word_repeat` | A vocabulary word-repetition trainer | [`Word-Repeat-App`](https://github.com/MuratAkkus0/Word-Repeat-App) |
+| `vue-project` | First Vue project, wired to a fake/mock API | [`First-Vue-Project-Fake-Api`](https://github.com/MuratAkkus0/job-listings-mock-api) |
+| `word_repeat` | A vocabulary word-repetition trainer | [`Word-Repeat-App`](https://github.com/MuratAkkus0/vocab-trainer) |
 
 Entries marked "—" had no standalone successor found; they're kept here as
 originally written.
