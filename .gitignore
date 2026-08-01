@@ -1,3 +1,25 @@
 GreenPower.md
 jsDosyaIndirtmrKodu.md
 /AiDeneme/*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+build/
+.vite/
+
+# Env / local secrets
+.env
+.env.local
+*.local
+
+# Logs
+*.log
+npm-debug.log*
